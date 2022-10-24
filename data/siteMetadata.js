@@ -1,25 +1,26 @@
 const siteMetadata = {
-  title: 'Séraphin',
-  author: 'Séraphin Vandegar',
-  headerTitle: 'Séraphin Vandegar',
-  description: "Le blog qui parle de tech éthique et d'entrepreneuriat responsable",
+  title: 'Aynils • Le numérique pour votre OSBL',
+  author: 'Aynils',
+  headerTitle: 'Aynils',
+  description:
+    'Information, conseil et outils informatiques pour les organismes sans but lucratif.',
   language: 'fr-ca',
-  theme: 'system', // system, dark or light
-  siteUrl: 'https://seraphin.dev',
-  siteRepo: 'https://github.com/svandegar/seraphin',
+  theme: 'light', // system, dark or light
+  siteUrl: 'https://aynils.ca',
+  siteRepo: 'https://github.com/aynils/aynils',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/seraphin.jpg',
+  image: '/static/images/logo.jpg',
   socialBanner: '/static/images/default-card.png',
   email: 'seraphin@aynils.ca',
   github: 'https://github.com/svandegar',
   twitter: 'https://twitter.com/svandegar',
-  linkedin: 'https://www.linkedin.com/in/seraphinvandegar',
+  linkedin: 'https://www.linkedin.com/company/aynils',
   locale: 'fr-CA',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
     // supports plausible, simpleAnalytics, umami or googleAnalytics
-    plausibleDataDomain: 'seraphin.dev', // e.g. tailwind-nextjs-starter-blog.vercel.app
+    plausibleDataDomain: 'aynils.ca', // e.g. tailwind-nextjs-starter-blog.vercel.app
     simpleAnalytics: false, // true or false
     umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
     googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
