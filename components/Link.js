@@ -1,7 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
-const CustomLink = ({ href, ...rest }) => {
+const CustomLink = ({ skipLocaleHandling, href, ...rest }) => {
+  const router = useRouter()
+  const locale = rest.locale || router.query.locale || ''
+
+  href = href || router.asPath
+  if (href.indexOf('http') === 0) skipLocaleHandling = true
+  if (locale && !skipLocaleHandling) {
+    href = href ? `/${locale}${href}` : router.pathname.replace('[locale]', locale)
+  }
+
   const isInternalLink = href && href.startsWith('/')
   const isAnchorLink = href && href.startsWith('#')
 

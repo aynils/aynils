@@ -1,3 +1,5 @@
+// const { i18n } = require('./next-i18next.config')
+
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
@@ -53,6 +55,7 @@ const securityHeaders = [
 ]
 
 module.exports = withBundleAnalyzer({
+  // i18n,
   images: {
     loader: 'imgix',
     path: 'https://aynils.imgix.net',
@@ -72,6 +75,7 @@ module.exports = withBundleAnalyzer({
     ]
   },
   webpack: (config, { dev, isServer }) => {
+    config.experiments = { ...config.experiments, ...{ topLevelAwait: true } }
     config.module.rules.push({
       test: /\.(png|jpe?g|gif|mp4)$/i,
       use: [
