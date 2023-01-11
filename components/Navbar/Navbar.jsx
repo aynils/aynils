@@ -8,9 +8,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between pt-5 pb-2">
       <Link href="/" aria-label={siteMetadata.headerTitle}>
-        <div className="hidden h-full text-2xl font-semibold md:block">
-          {siteMetadata.headerTitle}
-        </div>
+        <div className="h-full text-2xl font-semibold md:block">{siteMetadata.headerTitle}</div>
       </Link>
       <div className="flex items-center text-base leading-5">
         <div className="hidden flex-nowrap sm:flex">
