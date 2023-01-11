@@ -16,21 +16,29 @@
     url(../public/static/fonts/LexieReadable/LexieReadable-Bold.ttf) format('truetype');
 }
 
+body {
+  font-size: 1.5rem;
+}
+
 h1 {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 4rem;
   letter-spacing: theme('letterSpacing.wide');
 }
 
 h2 {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 3rem;
   letter-spacing: theme('letterSpacing.wide');
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 600;
+}
+
+.buttonSecondary {
+  @apply inline-block flex w-fit rounded-2xl border border-primary-700 py-4 px-8 duration-500 hover:scale-105;
 }
 
 .task-list-item::before {
