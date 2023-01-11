@@ -4,7 +4,7 @@ module.exports = {
   experimental: {
     optimizeUniversalDefaults: true,
   },
-  content: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js', './lib/**/*.js'],
+  content: ['./pages/**/*.js*', './components/**/*.js*', './layouts/**/*.js*', './lib/**/*.js'],
   darkMode: 'class',
   theme: {
     extend: {
@@ -187,5 +187,9 @@ module.exports = {
       }),
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('tw-elements/dist/plugin'),
+  ],
 }
