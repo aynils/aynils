@@ -1,11 +1,11 @@
-import LogoVertical from '../../public/static/images/logos/aynils_vertical.svg'
+import LogoVertical from '/public/static/images/logos/aynils_vertical.svg'
 import { useTranslation } from 'next-i18next'
-import ArrowDownIcon from '../../public/static/icons/arrow-down.svg'
+import ArrowDownIcon from '/public/static/icons/arrow-down.svg'
 
 const Hero = () => {
   const { t } = useTranslation('common')
   return (
-    <section className="mb-20 w-screen">
+    <section className="mb-20 w-screen ">
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
