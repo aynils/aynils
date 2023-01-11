@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import Link from '../Link'
 import headerNavLinks from '@/data/headerNavLinks'
+import { useTranslation } from 'next-i18next'
 
 const MobileNavbar = () => {
   const [displayNavbar, setDisplayNavbar] = useState(false)
-
+  const { t } = useTranslation('common')
   const onToggleNav = () => {
     setDisplayNavbar((status) => {
       if (status) {
@@ -71,7 +72,7 @@ const MobileNavbar = () => {
                     aria-expanded="false"
                     aria-controls={link.title}
                   >
-                    {link.title}
+                    {t(link.title)}
                   </button>
                   <div
                     id={link.title}
@@ -87,7 +88,7 @@ const MobileNavbar = () => {
                             className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
                             onClick={onToggleNav}
                           >
-                            {subLink.title}
+                            {t(subLink.title)}
                           </Link>
                         </div>
                       ))}
@@ -103,7 +104,7 @@ const MobileNavbar = () => {
                     className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
                     onClick={onToggleNav}
                   >
-                    {link.title}
+                    {t(link.title)}
                   </Link>
                 </div>
               )

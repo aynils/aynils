@@ -1,9 +1,13 @@
 {
-  "inform": "informer",
-  "consult": "conseiller",
+  "inform": "Informer",
+  "consult": "Conseiller",
   "tools": "Outiller",
   "contact": "Nous contacter",
   "about": "À propos",
+  "training": "Formation",
+  "bibli": "La Bibli",
+  "feuilledetemps": "Feuille de temps",
+  "ressources": "Ressources",
   "our_mission": "Notre mission",
   "mission": "Informer, conseiller et outiller les OSBL pour améliorer leurs pratiques numériques.",
   "how_can_we_help": "Comment pouvons-nous vous aider?"

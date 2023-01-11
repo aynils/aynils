@@ -3,8 +3,10 @@ import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import MobileNavbar from '@/components/Navbar/MobileNavbar'
 import LogoHorizontal from '../../public/static/images/logos/aynils_horizontal.svg'
+import { useTranslation } from 'next-i18next'
 
 const Navbar = () => {
+  const { t } = useTranslation('common')
   return (
     <nav className="mx-auto flex h-24 w-full max-w-7xl items-center justify-between pl-16 pr-16 pt-5 pb-2">
       <Link href="/" aria-label={siteMetadata.headerTitle}>
@@ -18,7 +20,7 @@ const Navbar = () => {
               return (
                 <div
                   key={link.title}
-                  className="dropdown text-primary-900 relative p-1 text-2xl font-medium hover:text-primary-500 dark:text-primary-100 dark:hover:text-primary-400 lg:p-4"
+                  className="dropdown text-primary-900 relative p-1 text-2xl font-light hover:text-primary-500 dark:text-primary-100 dark:hover:text-primary-400 lg:p-4"
                 >
                   <a
                     className="dropdown-toggle"
@@ -26,7 +28,7 @@ const Navbar = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    {link.title}
+                    {t(link.title)}
                   </a>
                   <ul
                     className="
@@ -69,7 +71,7 @@ const Navbar = () => {
                                 "
                           href={subLink.href}
                         >
-                          {subLink.title}
+                          {t(subLink.title)}
                         </a>
                       </li>
                     ))}
@@ -81,9 +83,9 @@ const Navbar = () => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="dropdown text-primary-900 relative p-1 text-2xl font-medium hover:text-primary-500 dark:text-primary-100 dark:hover:text-primary-400 lg:p-4"
+                  className="dropdown text-primary-900 relative p-1 text-2xl font-light hover:text-primary-500 dark:text-primary-100 dark:hover:text-primary-400 lg:p-4"
                 >
-                  {link.title}
+                  {t(link.title)}
                 </Link>
               )
             }
