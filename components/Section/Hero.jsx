@@ -5,14 +5,13 @@ import ArrowDownIcon from '../../public/static/icons/arrow-down.svg'
 const Hero = () => {
   const { t } = useTranslation('common')
   return (
-    <section className="mb-40">
+    <section className="mb-20">
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
         preserveAspectRatio="none"
         className="svg absolute -z-10 h-[750px] sm:h-[560px] sm:w-[250%]"
-        // style={{ height: '560px', width: '250%', zIndex: -10, overflow: 'hidden' }}
       >
         <defs>
           <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
@@ -35,7 +34,7 @@ const Hero = () => {
                 </h1>
                 <p className="mb-16 mt-10 text-2xl text-secondary-800">{t('mission')}</p>
 
-                <button type="button" className="buttonSecondary mx-auto lg:ml-0">
+                <a type="button" className="buttonSecondary mx-auto lg:ml-0" href="#section1">
                   {t('how_can_we_help')}
                   <ArrowDownIcon
                     aria-hidden="true"
@@ -48,7 +47,7 @@ const Hero = () => {
                     preserveAspectRatio="xMidYMid meet"
                     viewBox="0 0 35 35"
                   />
-                </button>
+                </a>
               </div>
               <div className="h-9/12 mb-0 hidden w-9/12 justify-self-end lg:block">
                 <LogoVertical className="h-full w-full" />
