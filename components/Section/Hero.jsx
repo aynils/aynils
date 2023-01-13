@@ -1,6 +1,6 @@
 import LogoVertical from '/public/static/images/logos/aynils_vertical.svg'
 import { useTranslation } from 'next-i18next'
-import ArrowDownIcon from '/public/static/icons/arrow-down.svg'
+import Button from '@/components/Button/Button'
 
 const Hero = () => {
   const { t } = useTranslation('common')
@@ -34,22 +34,16 @@ const Hero = () => {
                 <h1>
                   {t('our_mission')} <br />
                 </h1>
-                <p className="mb-16 mt-10 text-2xl text-secondary-800">{t('mission')}</p>
+                <p className="mb-8 mt-10 text-2xl text-secondary-800">{t('mission')}</p>
 
-                <a type="button" className="buttonSecondary mx-auto lg:ml-0" href="#section1">
+                <Button
+                  color={'secondary'}
+                  type="arrowDown"
+                  className="mx-auto lg:ml-0"
+                  href="#section1"
+                >
                   {t('how_can_we_help')}
-                  <ArrowDownIcon
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fas"
-                    data-icon="download"
-                    className="ml-2 h-full w-6"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 35 35"
-                  />
-                </a>
+                </Button>
               </div>
               <div className="h-9/12 mb-0 hidden w-9/12 justify-self-end lg:block">
                 <LogoVertical className="h-full w-full" />

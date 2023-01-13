@@ -10,5 +10,11 @@
   "ressources": "Ressources",
   "our_mission": "Notre mission",
   "mission": "Informer, conseiller et outiller les OSBL pour améliorer leurs pratiques numériques.",
-  "how_can_we_help": "Comment pouvons-nous vous aider?"
+  "how_can_we_help": "Comment pouvons-nous vous aider?",
+  "inform_section": {
+    "subtitle": "Rendre l'information accessible",
+    "p1": "Nous pensons que l'information doit être libre et accessible à tous et à toutes.",
+    "p2": "Pour cette raison, nous publions des guides, ressources et références à destination des organismes sans but lucratif.",
+    "inform_link": "Consultez ces ressources"
+  }
 }

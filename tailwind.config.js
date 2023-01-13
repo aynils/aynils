@@ -4,7 +4,13 @@ module.exports = {
   experimental: {
     optimizeUniversalDefaults: true,
   },
-  content: ['./pages/**/*.js*', './components/**/*.js*', './layouts/**/*.js*', './lib/**/*.js'],
+  content: [
+    './pages/**/*.js*',
+    './components/**/*.js*',
+    './layouts/**/*.js*',
+    './lib/**/*.js',
+    './public/**/*.json',
+  ],
   darkMode: 'class',
   theme: {
     extend: {
@@ -31,6 +37,7 @@ module.exports = {
           600: '#5F8286',
           700: '#334749',
           800: '#090C0D',
+          bright: '#0C81a0',
         },
         backupSecondary: {
           0: '#FAE2DC',

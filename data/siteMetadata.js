@@ -12,8 +12,7 @@ const siteMetadata = {
   image: '/static/images/logos/aynils_square_image.svg',
   socialBanner: '/static/images/default-card.png',
   email: 'seraphin@aynils.ca',
-  github: 'https://github.com/svandegar',
-  twitter: 'https://twitter.com/svandegar',
+  github: 'https://github.com/aynils',
   linkedin: 'https://www.linkedin.com/company/aynils',
   locale: 'fr-CA',
   analytics: {

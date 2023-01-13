@@ -11,7 +11,6 @@ const Navbar = () => {
     <nav className="mx-auto flex h-24 w-full max-w-7xl items-center justify-between pl-8 pr-8 pt-5 pb-2">
       <Link href="/" aria-label={siteMetadata.headerTitle}>
         <LogoHorizontal className="h-10 w-full" />
-        {/*<div className="text-2xl font-semibold">{siteMetadata.headerTitle}</div>*/}
       </Link>
       <div className="flex items-center text-base leading-5">
         <div className="hidden flex-nowrap lg:flex">

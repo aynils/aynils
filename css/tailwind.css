@@ -18,6 +18,12 @@
 
 body {
   @apply text-xl;
+  @apply leading-8;
+}
+
+header > p {
+  @apply text-secondary-600;
+  @apply mt-1 mb-4;
 }
 
 h1 {
@@ -37,8 +43,21 @@ h3 {
   font-weight: 600;
 }
 
-.buttonSecondary {
-  @apply inline-block flex w-fit items-center rounded-2xl border border-primary-700 py-4 px-8 duration-500 hover:scale-105;
+.button {
+  @apply inline-block flex;
+  @apply w-fit items-center sm:items-stretch;
+  @apply rounded-2xl border;
+  @apply mt-8 py-4 px-8;
+  @apply duration-500 hover:scale-105;
+}
+
+.button.primary {
+  @apply bg-primary-bright;
+  @apply text-white;
+}
+
+.button.secondary {
+  @apply border-primary-700;
 }
 
 .task-list-item::before {
