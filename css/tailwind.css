@@ -17,28 +17,28 @@
 }
 
 body {
-  font-size: 1.5rem;
+  @apply text-xl;
 }
 
 h1 {
   font-weight: 500;
-  font-size: 4rem;
+  @apply text-4xl sm:text-6xl;
   letter-spacing: theme('letterSpacing.wide');
 }
 
 h2 {
   font-weight: 700;
-  font-size: 3rem;
+  @apply text-3xl sm:text-5xl;
   letter-spacing: theme('letterSpacing.wide');
 }
 
 h3 {
-  font-size: 2rem;
+  @apply text-2xl sm:text-4xl;
   font-weight: 600;
 }
 
 .buttonSecondary {
-  @apply inline-block flex w-fit rounded-2xl border border-primary-700 py-4 px-8 duration-500 hover:scale-105;
+  @apply inline-block flex w-fit items-center rounded-2xl border border-primary-700 py-4 px-8 duration-500 hover:scale-105;
 }
 
 .task-list-item::before {

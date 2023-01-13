@@ -5,14 +5,14 @@ import ArrowDownIcon from '/public/static/icons/arrow-down.svg'
 const Hero = () => {
   const { t } = useTranslation('common')
   return (
-    <section className="mb-20 ">
-      <div className="absolute -z-10 w-screen overflow-hidden">
+    <section className="relative mb-20">
+      <div className="absolute -z-10 h-[125%] w-screen overflow-hidden lg:h-[110%]">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
           preserveAspectRatio="none"
-          className="svg h-[750px] sm:h-[560px] sm:w-[250%]"
+          className="svg h-full sm:w-[250%]"
         >
           <defs>
             <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
@@ -27,7 +27,7 @@ const Hero = () => {
         </svg>
       </div>
       <container className="mx-auto block max-w-7xl">
-        <div className="px-6 pt-0 text-center text-gray-800 md:py-20 md:px-24  lg:text-left">
+        <div className="px-6 pt-0 text-center text-gray-800 lg:py-20 lg:px-24  lg:text-left">
           <div className="container mx-auto ">
             <div className="flex grid items-center  gap-12 lg:grid-cols-3">
               <div className="col-span-2 mt-12 flex flex-col justify-center lg:mt-0">
