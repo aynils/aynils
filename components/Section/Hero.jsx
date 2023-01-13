@@ -5,8 +5,8 @@ import ArrowDownIcon from '/public/static/icons/arrow-down.svg'
 const Hero = () => {
   const { t } = useTranslation('common')
   return (
-    <section className="relative mb-20">
-      <div className="absolute -z-10 h-[125%] w-screen overflow-hidden lg:h-[110%]">
+    <section className="relative pb-10">
+      <div className="absolute -z-10 h-[115%] w-screen overflow-hidden lg:h-[100%]">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"

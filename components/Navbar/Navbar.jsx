@@ -8,7 +8,7 @@ import { useTranslation } from 'next-i18next'
 const Navbar = () => {
   const { t } = useTranslation('common')
   return (
-    <nav className="mx-auto flex h-24 w-full max-w-7xl items-center justify-between pl-16 pr-16 pt-5 pb-2">
+    <nav className="mx-auto flex h-24 w-full max-w-7xl items-center justify-between pl-8 pr-8 pt-5 pb-2">
       <Link href="/" aria-label={siteMetadata.headerTitle}>
         <LogoHorizontal className="h-10 w-full" />
         {/*<div className="text-2xl font-semibold">{siteMetadata.headerTitle}</div>*/}
