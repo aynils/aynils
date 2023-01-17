@@ -1,8 +1,15 @@
-const Section = ({ id, children }) => {
+const Section = ({ id, children, image, imagePlacement, backgroundColor }) => {
   return (
-    <section className="py-10 lg:py-10" id={id}>
-      <container className="mx-auto block max-w-7xl px-6 sm:px-16 lg:px-24">
-        <article>{children}</article>
+    <section className={`py-10 lg:py-20 bg-${backgroundColor}`} id={id}>
+      <container className="mx-auto block grid max-w-7xl px-6 sm:px-16 lg:grid-cols-3 lg:px-24">
+        <div
+          className={`h-9/12 mb-0 hidden hidden w-9/12 justify-self-start lg:block lg:block ${
+            imagePlacement === 'right' ? 'order-3' : 'order-0'
+          } `}
+        >
+          {image}
+        </div>
+        <article className="lg:col-span-2">{children}</article>
       </container>
     </section>
   )

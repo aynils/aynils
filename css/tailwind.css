@@ -36,11 +36,30 @@ h2 {
   font-weight: 700;
   @apply text-3xl sm:text-5xl;
   letter-spacing: theme('letterSpacing.wide');
+  @apply leading-snug;
+  @apply mt-1 mb-8;
 }
 
 h3 {
   @apply text-2xl sm:text-4xl;
   font-weight: 600;
+}
+p {
+  @apply mb-5;
+}
+
+ul {
+  @apply list-inside;
+}
+
+ul li:before {
+  content: '✓ ';
+  @apply text-primary-500;
+}
+
+li {
+  @apply leading-8;
+  @apply mb-5;
 }
 
 .button {

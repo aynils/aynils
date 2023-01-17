@@ -14,7 +14,17 @@
   "inform_section": {
     "subtitle": "Rendre l'information accessible",
     "p1": "Nous pensons que l'information doit être libre et accessible à tous et à toutes.",
-    "p2": "Pour cette raison, nous publions des guides, ressources et références à destination des organismes sans but lucratif.",
+    "p2": "C'est pourquoi nous publions des guides, ressources et références à destination des organismes sans but lucratif.",
     "inform_link": "Consultez ces ressources"
+  },
+  "consult_section": {
+    "subtitle": "Vous accompagner dans le changement",
+    "p1": "Nous vous accompagnons lors de réflexions ou de changements dans vos procédures et outils informatiques.",
+    "p2": "Voici quelques exemples de nos domaines d'expertise :",
+    "l1": "Audit de confidentialité et sécurité des données",
+    "l2": "Rédaction du cahier des charges et choix d'un·e prestataire de services pour la refonte d'un site web",
+    "l3": "Diagnostic numérique de l'organisme",
+    "l4": "Formation à l'accessibilité",
+    "consult_link": "Découvrez nos services"
   }
 }
