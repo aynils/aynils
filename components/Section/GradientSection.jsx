@@ -1,6 +1,6 @@
 const GradientSection = ({ children }) => {
   return (
-    <section className="relative pb-10">
+    <section className="relative pb-20">
       <div className="absolute -z-10 h-[115%] w-screen overflow-hidden lg:h-[100%]">
         <svg
           data-name="Layer 1"

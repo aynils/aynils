@@ -86,7 +86,7 @@ module.exports = {
               color: theme('colors.secondary.900'),
             },
             h3: {
-              color: theme('colors.secondary.900'),
+              color: theme('colors.secondary.800'),
             },
             'h4,h5,h6': {
               color: theme('colors.secondary.900'),

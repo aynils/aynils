@@ -27,23 +27,21 @@ header > p {
 }
 
 h1 {
-  font-weight: 500;
-  @apply text-4xl sm:text-6xl;
+  @apply text-4xl font-semibold sm:text-6xl;
   letter-spacing: theme('letterSpacing.wide');
   @apply mb-6 lg:mb-8;
 }
 
 h2 {
-  font-weight: 700;
-  @apply text-3xl sm:text-5xl;
+  @apply text-3xl font-medium sm:text-5xl;
   letter-spacing: theme('letterSpacing.wide');
   @apply leading-snug;
-  @apply mt-1 mb-8;
+  @apply mt-1 mb-6;
 }
 
 h3 {
-  @apply text-2xl sm:text-4xl;
-  font-weight: 600;
+  @apply text-2xl font-light sm:text-4xl;
+  @apply mt-12 mb-6;
 }
 p {
   @apply mb-5;

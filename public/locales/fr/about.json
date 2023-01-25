@@ -1,4 +1,49 @@
 {
   "page_title": "À propos de nous",
-  "page_description": "Pourquoi nous avons décidé de nous consacrer à l'accompagnement d'organismes sans but lucratif : Notre mission, nos valeurs et notre histoire."
+  "page_description": "Pourquoi nous avons décidé de nous consacrer à l'accompagnement d'organismes sans but lucratif : Notre mission, nos valeurs et notre histoire.",
+  "who_are_we": {
+    "title": "Qui sommes-nous?",
+    "subtitle": "Aynils",
+    "p1": "Aynils est une entreprise canadienne basée à Moncton, au Nouveau-Brunswick.",
+    "p2": "Aynils a été créée en janvier 2020 pour apporter des solution aux responsables d'OSBL qui manquent de temps et/ou de compétences pour gérer les procédures et outils informatiques.",
+    "p3": "Notre accompagnement a déjà aidé de nombreux organismes à travers l’ensemble du pays à améliorer leurs pratiques et à assurer leur transition numérique."
+  },
+  "values": {
+    "title": "Nos valeurs",
+    "subtitle": "Toutes nos actions reflètent nos valeurs",
+    "p1": "Nous travaillons avec des client·es qui respectent ces valeurs. Nous choisissons également nos partenaires et prestataires de services en fonction de celles-ci.",
+    "l1": "Inclusion",
+    "l2": "Respect de l'environnement",
+    "l3": "Justice sociale"
+  },
+  "commitments": {
+    "title": "Nos engagements",
+    "subtitle": "Tous les produits et services que nous fournissons respectent ces engagements ",
+    "commitment1": {
+      "title": "Autonomie",
+      "p1": "Dans notre activité de conseil, la priorité est de vous rendre autonome.",
+      "p2": "Le but n'est jamais de vous vendre plus de services. Nous vous aidons plutôt à acquérir les compétences nécessaires et à gagner en maturité numérique. Si besoin, nous restons disponibles pour vous aider."
+    },
+    "commitment2": {
+      "title": "Accessibilité",
+      "p1": "Nous respectons le principe d'accessibilité et développons nos outils de façon à les rendre accessibles par défaut.",
+      "p2": "Nos outils respectent au minimum la norme AA des WCAG2 qui sont les lignes directrices de l'organisme de référence : la Web Accessibility Initiative.",
+      "p3": "Si votre projet requiert des adaptations spécifiques, nous serons heureux d'en tenir compte dans sa réalisation."
+    },
+    "commitment3": {
+      "title": "Respect de la vie privée",
+      "p1": "Dans une société où le capitalisme de surveillance est omniprésent, nous faisons le choix de limiter au maximum les informations recueillies par nos outils.",
+      "p2": "Nous pensons que le droit à une navigation anonyme sur internet est important. Nous n'utilisons pas et n'installons pas pour nos client·es d'outils ou de trackers qui ne respectent pas ce droit. Par exemple : pas de Google Analytics, de HubSpot ou de pixel Facebook.",
+      "p3": "Sur ce site, nous mesurons le trafic grâce à Plausible Analytics, un outil géré par une petite entreprise indépendante qui ne recueille aucune information personnelle."
+    },
+    "commitment4": {
+      "title": "Licences libres",
+      "p1": "Tous les documents que nous produisons sont accompagnés d'une licence qui permet leur partage et leur réutilisation.",
+      "p2": "Parce que nous pensons que l'information doit pouvoir être partagée librement, nous montrons l'exemple avec notre travail."
+    },
+    "commitment5": {
+      "title": "Garantie",
+      "p1": "Tous nos produits sont garantis pendant 90 jours contre toute malfaçon mais aussi contre un dysfonctionnement qui serait dû à une mise à jour majeure d'un système d'exploitation."
+    }
+  }
 }
