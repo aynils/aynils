@@ -1,13 +1,10 @@
-import { getFileBySlug } from '@/lib/mdx'
 import { getStaticPaths, makeStaticProps } from '@/lib/getStatic'
 import { useTranslation } from 'next-i18next'
 import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 import PageHeader from '@/components/Section/PageHeader'
 
-const getStaticProps = makeStaticProps(['common'], {
-  authorDetails: await getFileBySlug('authors', ['default']),
-})
+const getStaticProps = makeStaticProps(['about', 'common'], {})
 export { getStaticPaths, getStaticProps }
 
 export default function Apropos() {
