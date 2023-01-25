@@ -49,13 +49,13 @@ p {
 }
 
 ul {
-  @apply list-inside;
+  @apply list-outside;
 }
 
-ul li:before {
-  content: '✓ ';
-  @apply text-primary-500;
-}
+/*ul li:before {*/
+/*  content: '✓ ';*/
+/*  @apply text-primary-500;*/
+/*}*/
 
 li {
   @apply leading-8;
@@ -80,7 +80,8 @@ li {
 }
 
 .task-list-item::before {
-  @apply hidden;
+  content: '✓ ';
+  @apply text-primary-500;
 }
 
 .task-list-item {

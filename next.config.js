@@ -90,6 +90,11 @@ module.exports = withBundleAnalyzer({
     })
 
     config.module.rules.push({
+      test: /\.svg$/i,
+      type: 'asset',
+      resourceQuery: /url/, // *.svg?url
+    })
+    config.module.rules.push({
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     })
