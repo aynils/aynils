@@ -33,7 +33,7 @@ export default function Home() {
           />
         }
         imagePlacement="left"
-        backgroundColor="primary-0"
+        backgroundColor="bg-primary-0"
       >
         <header>
           <p>{t('inform')}</p>
@@ -57,7 +57,7 @@ export default function Home() {
           />
         }
         imagePlacement="left"
-        backgroundColor="primary-100"
+        backgroundColor="bg-primary-100"
       >
         <header>
           <p>{t('consult')}</p>
@@ -87,7 +87,7 @@ export default function Home() {
           />
         }
         imagePlacement="left"
-        backgroundColor="primary-0"
+        backgroundColor="bg-primary-0"
       >
         <header>
           <p>{t('tools')}</p>
