@@ -30,6 +30,7 @@ h1 {
   font-weight: 500;
   @apply text-4xl sm:text-6xl;
   letter-spacing: theme('letterSpacing.wide');
+  @apply mb-6 lg:mb-8;
 }
 
 h2 {

@@ -1,5 +1,6 @@
 const siteMetadata = {
   title: 'Aynils • Le numérique pour votre OSBL',
+  defaultTitlePrefix: 'Aynils • ',
   author: 'Aynils',
   headerTitle: 'Aynils',
   description:

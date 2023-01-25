@@ -19,7 +19,7 @@ const Navbar = () => {
               return (
                 <div
                   key={link.title}
-                  className="dropdown text-primary-900 relative p-1 text-2xl font-light hover:text-primary-500 dark:text-primary-100 dark:hover:text-primary-400 lg:p-4"
+                  className="dropdown text-primary-900 relative p-1 text-2xl font-light hover:text-primary-600 dark:text-primary-100 dark:hover:text-primary-400 lg:p-4"
                 >
                   <a
                     className="dropdown-toggle"
@@ -43,7 +43,7 @@ const Navbar = () => {
                           border-none
                           bg-white
                           bg-clip-padding
-                          pt-2
+                          pt-4
                           pb-0
                           text-left
                           text-base
@@ -60,7 +60,7 @@ const Navbar = () => {
                                   w-full
                                   whitespace-nowrap
                                   bg-transparent
-                                  py-2
+                                  py-0
                                   px-4
                                   text-2xl
                                   font-normal
@@ -81,7 +81,7 @@ const Navbar = () => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="dropdown text-primary-900 relative p-1 text-2xl font-light hover:text-primary-500 dark:text-primary-100 dark:hover:text-primary-400 lg:p-4"
+                  className="dropdown text-primary-900 relative p-1 text-2xl font-light hover:text-primary-600 dark:text-primary-100 dark:hover:text-primary-400 lg:p-4"
                 >
                   {t(link.title)}
                 </Link>

@@ -8,10 +8,8 @@ import Hero from '@/components/Section/Hero'
 import Section from '@/components/Section/Section'
 import Button from '@/components/Button/Button'
 import InformIllustration from '../../public/static/images/undraw_online_articles_re_yrkj.svg'
-import informIllustration from '../../public/static/images/undraw_online_articles_re_yrkj.svg?url'
 import ToolsIllustration from '../../public/static/images/undraw_blogging_re_kl0d.svg'
 import ConsultIllustration from '../../public/static/images/undraw_solution_mindset_re_57bf.svg'
-import Image from '@/components/Image'
 
 const getStaticProps = makeStaticProps(['common'], { posts: await getAllFilesFrontMatter('blog') })
 export { getStaticPaths, getStaticProps }
