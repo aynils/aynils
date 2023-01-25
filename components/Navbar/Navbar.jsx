@@ -8,7 +8,7 @@ import { useTranslation } from 'next-i18next'
 const Navbar = () => {
   const { t } = useTranslation('common')
   return (
-    <nav className="mx-auto flex h-24 w-full max-w-7xl items-center justify-between pl-8 pr-8 pt-5 pb-2">
+    <nav className="mx-auto flex h-24 w-full max-w-7xl items-center justify-between bg-primary-0 pl-8 pr-8 pt-5 pb-2">
       <Link href="/" aria-label={siteMetadata.headerTitle}>
         <LogoHorizontal className="h-10 w-full" />
       </Link>
@@ -33,11 +33,9 @@ const Navbar = () => {
                     className="
                           dropdown-menu
                           absolute
+                          !-left-4
                           z-50
-                          float-left
                           m-0
-                          mt-1
-                          hidden
                           hidden
                           min-w-max
                           list-none
@@ -45,7 +43,8 @@ const Navbar = () => {
                           border-none
                           bg-white
                           bg-clip-padding
-                          py-2
+                          pt-2
+                          pb-0
                           text-left
                           text-base
                           shadow-lg

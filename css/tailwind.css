@@ -96,6 +96,13 @@ li {
   @apply my-5;
 }
 
+.accordion-item::after {
+  content: ' >';
+  @apply rotate-90;
+  @apply inline-block;
+  @apply ml-3;
+}
+
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
