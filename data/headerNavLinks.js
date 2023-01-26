@@ -17,7 +17,7 @@ const headerNavLinks = [
       // { href: '/outiller', title: 'Outiller' },
       { href: '/la-bibli', title: 'bibli' },
       { href: '/feuille-de-temps', title: 'feuilledetemps' },
-      { href: '/formations', title: 'training' },
+      { href: '/formations', title: 'trainings' },
     ],
   },
   { href: '/a-propos', title: 'about' },

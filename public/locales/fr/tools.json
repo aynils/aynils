@@ -23,5 +23,18 @@
     "l2": "Présentez votre collection dans un format très visuel et intuitif avec une barre de recherche rapide et un classement par catégorie performant.",
     "l3": "Prêtez vos livres à vos membres, La Bibli s'occupe de tenir les comptes et de vous prévenir quand un retour est dû.",
     "link_labibli": "Découvrez La Bibli"
+  },
+  "feuilledetemps": {
+    "title": "Feuille de temps",
+    "subtitle": "Simplifiez votre gestion des feuilles de temps",
+    "description": "Simplifiez la gestion des feuilles de temps de votre organisme. Calcul automatique des maladies, vacances et heures supplémentaires. Vue globale sur l'équipe.",
+    "p1": "Nous avons développé Feuille de temps pour simplifier la gestion de votre OSBL.",
+    "p2": "Fini les fichiers Excel compliqués, les erreurs de calcul et les feuilles de temps rendues en retard!",
+    "p3": "Feuille de temps permet entre-autres de :",
+    "l1": "Voir toute votre équipe sur une seule page et de savoir directement où chacun·e en est avec ses maladies, vacances et heures supplémentaires",
+    "l2": "Envoyer un rappel aux personnes qui ont des feuilles de temps en retard",
+    "l3": "Envoyer toutes les feuilles de temps directement à votre service de paie",
+    "l4": "Ne plus vous soucier des calculs qui sont fait automatiquement grâce à des règles qui vous sont propres",
+    "link_feuilledetemps": "Découvrez Feuille de temps"
   }
 }
