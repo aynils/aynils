@@ -40,6 +40,10 @@ export default function Apropos() {
         <p>{t('who_are_we.p1')}</p>
         <p>{t('who_are_we.p2')}</p>
         <p>{t('who_are_we.p3')}</p>
+        <header>
+          <h3>{t('common:our_mission')}</h3>
+        </header>
+        <p className="text-secondary-600">{t('common:mission_statement')}</p>
       </Section>
       <Section
         id={t('values.title')}

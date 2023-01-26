@@ -15,7 +15,7 @@ const Hero = () => {
                 <h1>
                   {t('our_mission')} <br />
                 </h1>
-                <p className="mb-8 mt-10 text-2xl text-secondary-800">{t('mission')}</p>
+                <p className="mb-8 mt-10 text-2xl text-secondary-800">{t('mission_statement')}</p>
 
                 <Button
                   color={'secondary'}
