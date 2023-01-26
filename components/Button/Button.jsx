@@ -53,9 +53,9 @@ const addIcon = (type, color) => {
   }
 }
 
-const Button = ({ color, type, children, className, href }) => {
+const Button = ({ color, type, children, className, href, target }) => {
   return (
-    <a type="button" className={`button ${color} ${className}`} href={href}>
+    <a type="button" className={`button ${color} ${className}`} href={href} target={target}>
       {children}
       {addIcon(type, color)}
     </a>

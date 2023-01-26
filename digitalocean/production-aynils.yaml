@@ -4,7 +4,7 @@ alerts:
 name: aynils
 region: tor
 services:
-  - build_command: npm run build
+  - build_command: npm run export
     environment_slug: node-js
     github:
       branch: main
@@ -16,5 +16,4 @@ services:
     name: aynils
     routes:
       - path: /
-    run_command: npm start
     source_dir: /

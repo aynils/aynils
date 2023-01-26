@@ -34,22 +34,32 @@ export default function Tools() {
         imagePlacement="left"
       >
         <header>
-          <p>{t('training.title')}</p>
-          <h2>{t('training.subtitle')}</h2>
+          <p>{t('tools.title')}</p>
+          <h2>{t('tools.subtitle')}</h2>
         </header>
-        <p>{t('training.p1')}</p>
-        <p>{t('training.p2')}</p>
-        <p>{t('training.p3')}</p>
+        <p>{t('tools.p1')}</p>
+        <p>{t('tools.p2')}</p>
+        <p>{t('tools.p3')}</p>
         <ul>
-          <li className={'task-list-item'}>{t('training.l1')}</li>
-          <li className={'task-list-item'}>{t('training.l2')}</li>
+          <li className={'task-list-item'}>{t('tools.l1')}</li>
+          <li className={'task-list-item'}>{t('tools.l2')}</li>
         </ul>
         <div className="mt-10 flex justify-between">
-          <Button color={'primary'} type="externalLink" href={'https://labibli.com'}>
-            {t('link_labibli')}
+          <Button
+            color={'primary'}
+            type="externalLink"
+            href={'https://labibli.com?utm_campaign=tools-page'}
+            target="_blank"
+          >
+            {t('tools.link_labibli')}
           </Button>
-          <Button color={'primary'} type="externalLink" href={'https://feuilledetemps.ca'}>
-            {t('link_feuilledetemps')}
+          <Button
+            color={'primary'}
+            type="externalLink"
+            href={'https://feuilledetemps.ca?utm_campaign=tools-page'}
+            target="_blank"
+          >
+            {t('tools.link_feuilledetemps')}
           </Button>
         </div>
       </Section>
