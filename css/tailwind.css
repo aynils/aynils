@@ -51,14 +51,24 @@ ul {
   @apply list-outside;
 }
 
-/*ul li:before {*/
-/*  content: '✓ ';*/
-/*  @apply text-primary-500;*/
-/*}*/
+label {
+  @apply capitalize;
+}
+
+.text-input {
+  @apply rounded-2xl;
+  @apply py-4;
+  @apply text-xl;
+}
 
 li {
   @apply leading-8;
   @apply mb-5;
+}
+
+label {
+  @apply text-2xl;
+  @apply mb-2 mt-4;
 }
 
 .button {
