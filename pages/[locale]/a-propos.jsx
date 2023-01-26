@@ -12,7 +12,7 @@ import TeamIllustration from '../../public/static/images/undraw_team_page_re_cff
 const getStaticProps = makeStaticProps(['about', 'common'], {})
 export { getStaticPaths, getStaticProps }
 
-export default function Apropos() {
+export default function APropos() {
   const { t } = useTranslation('about')
   return (
     <>

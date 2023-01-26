@@ -1,0 +1,16 @@
+{
+  "page_title": "Informer",
+  "page_description": "Découvrez des guides, ressources et références sur le numérique, à destination des organismes sans but lucratif.",
+  "information": {
+    "title": "Information",
+    "subtitle": "De l'information à destination des OSBL",
+    "p1": "Nous pensons que l'information doit être libre et accessible à tous et à toutes.",
+    "p2": "C'est pourquoi nous publions des guides, ressources et références à destination des organismes sans but lucratif.",
+    "l1": "Guides : des guides complets pour vous accompager dans votre utilisation du numérique",
+    "l2": "Ressources : des modèles de documents libres de droits à réutiliser",
+    "l3": "Articles : des articles d'opinion ou d'information à propos du numérique",
+    "link_guides": "Les guides",
+    "link_resources": "Les ressources",
+    "link_articles": "Les articles"
+  }
+}

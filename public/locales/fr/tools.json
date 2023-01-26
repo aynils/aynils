@@ -11,5 +11,17 @@
     "l2": "La Bibli : partagez votre collection de livres avec votre public",
     "link_labibli": "Découvrez La Bibli",
     "link_feuilledetemps": "Découvrez Feuille de temps"
+  },
+  "labibli": {
+    "title": "La Bibli",
+    "subtitle": "Partagez les livres de votre organisme avec votre public",
+    "description": "Bibliothèque en ligne pour OSBL. En quelques clics, partagez les livres de votre organisme avec vos membres.",
+    "p1": "La Bibli est une bibliothèque en ligne pour organismes sans but lucratif",
+    "p2": "Nous avons développé La Bibli pour vous permettre de partager simplement votre collection de livres avec vos membres.",
+    "p3": "La Bibli a été développée avec une réelle volonté de simplicité :",
+    "l1": "Entrez vos nouveaux livres en les scannant grâce à un lecteur de code-barre ou en entrant leur numéro ISBN.",
+    "l2": "Présentez votre collection dans un format très visuel et intuitif avec une barre de recherche rapide et un classement par catégorie performant.",
+    "l3": "Prêtez vos livres à vos membres, La Bibli s'occupe de tenir les comptes et de vous prévenir quand un retour est dû.",
+    "link_labibli": "Découvrez La Bibli"
   }
 }

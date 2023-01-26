@@ -67,7 +67,7 @@ const Navbar = () => {
                                   text-primary-700
                                   hover:bg-primary-100
                                 "
-                          href={subLink.href}
+                          href={`${link.href}${subLink.href}`}
                         >
                           {t(subLink.title)}
                         </a>

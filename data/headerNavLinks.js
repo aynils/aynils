@@ -1,6 +1,6 @@
 const headerNavLinks = [
   {
-    href: '/information',
+    href: '/informer',
     title: 'inform',
     subLinks: [
       // { href: '/informer', title: 'Informer' },
@@ -11,7 +11,7 @@ const headerNavLinks = [
   },
   { href: '/conseil', title: 'consult' },
   {
-    href: '/outils',
+    href: '/outiller',
     title: 'tools',
     subLinks: [
       // { href: '/outiller', title: 'Outiller' },
@@ -20,8 +20,13 @@ const headerNavLinks = [
       { href: '/formations', title: 'training' },
     ],
   },
-  { href: '/apropos', title: 'about' },
+  { href: '/a-propos', title: 'about' },
   { href: '/contact', title: 'contact' },
 ]
+
+// export const notInNAvLinks = [
+//   { href: '/outiller', title: 'Outiller' },
+//   { href: '/informer', title: 'Informer' },
+// ]
 
 export default headerNavLinks

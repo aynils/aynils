@@ -84,7 +84,7 @@ const MobileNavbar = () => {
                       {link.subLinks.map((subLink) => (
                         <div key={subLink.title} className="py-4">
                           <Link
-                            href={subLink.href}
+                            href={`${link.href}${subLink.href}`}
                             className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
                             onClick={onToggleNav}
                           >

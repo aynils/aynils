@@ -15,7 +15,7 @@ const addIcon = (type, color) => {
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="xMidYMid meet"
-          viewBox="0 0 35 35"
+          viewBox="0 2 40 40"
         />
       )
     case 'arrowDown':

@@ -5,8 +5,6 @@ import siteMetadata from '@/data/siteMetadata'
 import PageHeader from '@/components/Section/PageHeader'
 import Section from '@/components/Section/Section'
 import Button from '@/components/Button/Button'
-import TrainingIllustration from '../../public/static/images/undraw_teaching_re_g7e3.svg'
-import ConsultIllustration from '../../public/static/images/undraw_solution_mindset_re_57bf.svg'
 import ToolsIllustration from '../../public/static/images/undraw_blogging_re_kl0d.svg'
 
 const getStaticProps = makeStaticProps(['information', 'common'], {})
@@ -34,32 +32,25 @@ export default function Information() {
         imagePlacement="left"
       >
         <header>
-          <p>{t('tools.title')}</p>
-          <h2>{t('tools.subtitle')}</h2>
+          <p>{t('information.title')}</p>
+          <h2>{t('information.subtitle')}</h2>
         </header>
-        <p>{t('tools.p1')}</p>
-        <p>{t('tools.p2')}</p>
-        <p>{t('tools.p3')}</p>
+        <p>{t('information.p1')}</p>
+        <p>{t('information.p2')}</p>
         <ul>
-          <li className={'task-list-item'}>{t('tools.l1')}</li>
-          <li className={'task-list-item'}>{t('tools.l2')}</li>
+          <li className={'task-list-item'}>{t('information.l1')}</li>
+          <li className={'task-list-item'}>{t('information.l2')}</li>
+          <li className={'task-list-item'}>{t('information.l3')}</li>
         </ul>
         <div className="mt-10 flex justify-between">
-          <Button
-            color={'primary'}
-            type="externalLink"
-            href={'https://labibli.com?utm_campaign=tools-page'}
-            target="_blank"
-          >
-            {t('tools.link_labibli')}
+          <Button color={'primary'} type="noicon" href={'/guides'} target="_blank">
+            {t('information.link_guides')}
           </Button>
-          <Button
-            color={'primary'}
-            type="externalLink"
-            href={'https://feuilledetemps.ca?utm_campaign=tools-page'}
-            target="_blank"
-          >
-            {t('tools.link_feuilledetemps')}
+          <Button color={'primary'} type="noicon" href={'/ressources'} target="_blank">
+            {t('information.link_resources')}
+          </Button>
+          <Button color={'primary'} type="noicon" href={'/articles'} target="_blank">
+            {t('information.link_articles')}
           </Button>
         </div>
       </Section>
