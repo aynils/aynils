@@ -10,15 +10,15 @@
   },
   "values": {
     "title": "Nos valeurs",
-    "subtitle": "Toutes nos actions reflètent nos valeurs",
+    "subtitle": "Toutes nos actions reflètent ces valeurs",
     "p1": "Nous travaillons avec des client·es qui respectent ces valeurs. Nous choisissons également nos partenaires et prestataires de services en fonction de celles-ci.",
     "l1": "Inclusion",
     "l2": "Respect de l'environnement",
     "l3": "Justice sociale"
   },
   "commitments": {
-    "title": "Nos engagements",
-    "subtitle": "Tous les produits et services que nous fournissons respectent ces engagements ",
+    "title": "Tous nos produits et services respectent ces engagements",
+    "subtitle": "Nos engagements",
     "commitment1": {
       "title": "Autonomie",
       "p1": "Dans notre activité de conseil, la priorité est de vous rendre autonome.",

@@ -1,0 +1,42 @@
+{
+  "page_title": "Conseiller",
+  "page_description": "Pourquoi nous avons décidé de nous consacrer à l'accompagnement d'organismes sans but lucratif : Notre mission, nos valeurs et notre histoire.",
+  "consult": {
+    "title": "Vous accompagner dans le changement",
+    "subtitle": "Conseiller",
+    "p1": "Nous vous accompagnons lors de réflexions ou de changements dans vos procédures et outils numériques.",
+    "p2": "Voici quelques exemples de nos domaines d'expertise :",
+    "consult1": {
+      "title": "Diagnostic numérique et recommandations",
+      "p1": "Ensemble, nous faisons le point sur la situation du numérique au sein de votre organisme. Nous faisons le bilan de ce qui fonctionne bien et de ce qui pourrait être amélioré.",
+      "p2": "Ensuite, nous vous présentons une série de recommandations pertinentes pour votre organisme avec les instructions pour les mettre en place."
+    },
+    "consult2": {
+      "title": "Confidentialité et sécurité des données",
+      "p1": "La confidentialité des données de vos membres, ainsi que de vos documents internes est votre responsabilité.",
+      "p2": "Nous réalisons un audit global de la situation au sein de votre organisme et vous remettons un rapport comprenant nos recommandations pour assurer cette confidentialité.",
+      "p3": "Nous rédigeons également des politiques internes en matière d'utilisation du matériel informatique et d'accès aux données."
+    },
+    "consult3": {
+      "title": "Rédaction du cahier des charges et choix d'un·e prestataire de services",
+      "p1": "Avant de publier un appel d'offres, pour le développement d'un nouveau site web par exemple, nous vous aidons à préciser vos besoins et à le traduire en termes techniques afin de réaliser un cahier des charges précis qui assurera une bonne compréhension avec le ou la prestataire de services.",
+      "p2": "Notre expérience dans le domaine nous permet d'attirer votre attention sur les erreurs fréquemment commises comme l'oubli de référencer les besoins en accessibilité, en formation du personnel ou en maintenance.",
+      "p3": "Nous vous aidons également à établir la grille d'évaluation qui vous permettra de choisir le ou la prestataire de service idéal·e."
+    },
+    "consult4": {
+      "title": "Préparation au changement",
+      "p1": "Lors d'un changement important, il est important que toute l'équipe soit impliquée et volontaire.",
+      "p2": "Nous facilitons la discussion avec votre équipe et vous aidons, dès le début du processus de changement, à comprendre et à adresser les éventuelles réticences."
+    }
+  },
+  "training": {
+    "title": "Partager nos connaissances",
+    "subtitle": "Former",
+    "p1": "Vous rendre indépendant·es dans l'utilisation du numérique fait partie de nos engagements.",
+    "p2": "Nous disposons d'un catalogue de formations et pouvons en créer de nouvelles à la demande.",
+    "p3": "Voici quelques exemples de formations que nous avons déjà organisées :",
+    "l1": "Appliquer le principe d'accessibilité universelle dans son OSBL",
+    "l2": "Cybersécurité et confidentialité des données pour les OSBL",
+    "l3": "Rédaction du cahier des charges pour la refonte du site web d'un OSBL"
+  }
+}

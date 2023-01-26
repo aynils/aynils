@@ -81,8 +81,8 @@ export default function Apropos() {
         imagePlacement="left"
       >
         <header className="mt-24">
-          <p>{t('commitments.title')}</p>
-          <h2>{t('commitments.subtitle')}</h2>
+          <p>{t('commitments.subtitle')}</p>
+          <h2>{t('commitments.title')}</h2>
         </header>
         <h3>{t('commitments.commitment1.title')}</h3>
         <p>{t('commitments.commitment1.p1')}</p>
