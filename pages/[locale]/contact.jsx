@@ -26,12 +26,6 @@ export default function Contact() {
         <p>{t('form.p1')}</p>
         <form>
           <div className="flex flex-col">
-            <label htmlFor="email" aria-required>
-              {t('email')}
-            </label>
-            <input className="text-input" type="email" id="email" autoComplete="email" />
-          </div>
-          <div className="flex flex-col">
             <label htmlFor="name" aria-required>
               {t('name')}
             </label>
@@ -40,6 +34,12 @@ export default function Contact() {
           <div className="flex flex-col">
             <label htmlFor="organization">{t('organization')}</label>
             <input className="text-input" type="text" id="organization" aria-required="false" />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="email" aria-required>
+              {t('email')}
+            </label>
+            <input className="text-input" type="email" id="email" autoComplete="email" />
           </div>
           <div className="flex flex-col">
             <label htmlFor="message" aria-required>
