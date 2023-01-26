@@ -21,7 +21,7 @@ export default function Train() {
       />
       <PageHeader title={t('page_title')} />
       <Section
-        id={t('values.title')}
+        id={t('training.title')}
         backgroundColor="bg-primary-0"
         image={
           <TrainingIllustration

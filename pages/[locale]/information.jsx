@@ -9,11 +9,11 @@ import TrainingIllustration from '../../public/static/images/undraw_teaching_re_
 import ConsultIllustration from '../../public/static/images/undraw_solution_mindset_re_57bf.svg'
 import ToolsIllustration from '../../public/static/images/undraw_blogging_re_kl0d.svg'
 
-const getStaticProps = makeStaticProps(['tools', 'common'], {})
+const getStaticProps = makeStaticProps(['information', 'common'], {})
 export { getStaticPaths, getStaticProps }
 
-export default function Tools() {
-  const { t } = useTranslation('tools')
+export default function Information() {
+  const { t } = useTranslation('information')
   return (
     <>
       <PageSEO
@@ -22,7 +22,7 @@ export default function Tools() {
       />
       <PageHeader title={t('page_title')} />
       <Section
-        id={t('tools.title')}
+        id={t('information.title')}
         backgroundColor="bg-primary-0"
         image={
           <ToolsIllustration
