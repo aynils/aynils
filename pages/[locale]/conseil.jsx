@@ -58,36 +58,6 @@ export default function Consult() {
           </Button>
         </div>
       </Section>
-      <Section
-        id={t('values.title')}
-        backgroundColor="bg-primary-100"
-        image={
-          <TrainingIllustration
-            className="h-[35%] w-full"
-            viewBox="000 00 750 500"
-            alt="Illustration représentant plusieurs personnes devant un tableau présentant un choix entre deux blocs d'information."
-          />
-        }
-        imagePlacement="left"
-      >
-        <header>
-          <p>{t('training.title')}</p>
-          <h2>{t('training.subtitle')}</h2>
-        </header>
-        <p>{t('training.p1')}</p>
-        <p>{t('training.p2')}</p>
-        <p>{t('training.p3')}</p>
-        <ul>
-          <li className={'task-list-item'}>{t('training.l1')}</li>
-          <li className={'task-list-item'}>{t('training.l2')}</li>
-          <li className={'task-list-item'}>{t('training.l3')}</li>
-        </ul>
-        <div className="mt-10">
-          <Button color={'secondary'} type="noicon" href={'/contact'}>
-            {t('common:contact')}
-          </Button>
-        </div>
-      </Section>
     </>
   )
 }

@@ -79,8 +79,8 @@ export default function Home() {
         id="section2"
         image={
           <ToolsIllustration
-            className="h-[50%] w-full"
-            viewBox="000 200 550 100"
+            className="h-[20%] w-full"
+            viewBox="000 200 980 100"
             alt="Illustration représentant plusieurs personnes en train de construire une interface web."
           />
         }
@@ -98,6 +98,24 @@ export default function Home() {
         <div className="mt-10">
           <Button color={'secondary'} type="noicon" href={'/outiller'}>
             {t('tools_section.tools_link')}
+          </Button>
+        </div>
+
+        <header className="mt-20">
+          {/*<p>{t('training_section.subtitle')}</p>*/}
+          <h2>{t('training_section.subtitle')}</h2>
+        </header>
+        <p>{t('training_section.p1')}</p>
+        <p>{t('training_section.p2')}</p>
+        <p>{t('training_section.p3')}</p>
+        <ul>
+          <li className={'task-list-item'}>{t('training_section.l1')}</li>
+          <li className={'task-list-item'}>{t('training_section.l2')}</li>
+          <li className={'task-list-item'}>{t('training_section.l3')}</li>
+        </ul>
+        <div className="mt-10">
+          <Button color={'secondary'} type="noicon" href={'/outiller'}>
+            {t('training_section.training_link')}
           </Button>
         </div>
       </Section>

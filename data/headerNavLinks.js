@@ -1,21 +1,23 @@
 const headerNavLinks = [
   {
-    href: '/informer',
+    href: '/information',
     title: 'inform',
     subLinks: [
       // { href: '/informer', title: 'Informer' },
-      { href: '/formations', title: 'training' },
       { href: '/ressources', title: 'ressources' },
+      { href: '/articles', title: 'articles' },
+      { href: '/guides', title: 'guides' },
     ],
   },
-  { href: '/conseiller', title: 'consult' },
+  { href: '/conseil', title: 'consult' },
   {
-    href: '/outiller',
+    href: '/outils',
     title: 'tools',
     subLinks: [
       // { href: '/outiller', title: 'Outiller' },
       { href: '/la-bibli', title: 'bibli' },
       { href: '/feuille-de-temps', title: 'feuilledetemps' },
+      { href: '/formations', title: 'training' },
     ],
   },
   { href: '/apropos', title: 'about' },

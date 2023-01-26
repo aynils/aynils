@@ -6,6 +6,8 @@
   "contact": "Nous contacter",
   "about": "À propos",
   "training": "Formation",
+  "articles": "Articles",
+  "guides": "Guides",
   "home": "Acceuil",
   "bibli": "La Bibli",
   "feuilledetemps": "Feuille de temps",
@@ -17,7 +19,7 @@
     "subtitle": "Rendre l'information accessible",
     "p1": "Nous pensons que l'information doit être libre et accessible à tous et à toutes.",
     "p2": "C'est pourquoi nous publions des guides, ressources et références à destination des organismes sans but lucratif.",
-    "inform_link": "Consultez ces ressources"
+    "inform_link": "Accédez à l'information"
   },
   "consult_section": {
     "subtitle": "Vous accompagner dans le changement",
@@ -27,7 +29,7 @@
     "l2": "Rédaction du cahier des charges et choix d'un·e prestataire de services pour la refonte d'un site web",
     "l3": "Diagnostic numérique de l'organisme",
     "l4": "Formation à l'accessibilité",
-    "consult_link": "Découvrez nos services"
+    "consult_link": "Découvrez nos domaines d'expertise"
   },
   "tools_section": {
     "subtitle": "Des outils informatiques adaptés à vos besoins",
@@ -39,5 +41,15 @@
     "l3": "Diagnostic numérique de l'organisme",
     "l4": "Formation à l'accessibilité",
     "tools_link": "Découvrez nos outils"
+  },
+  "training_section": {
+    "subtitle": "Formations",
+    "p1": "Vous rendre indépendant·es dans l'utilisation du numérique fait partie de nos engagements.",
+    "p2": "Nous disposons d'un catalogue de formations et pouvons en créer de nouvelles à la demande.",
+    "p3": "Voici quelques exemples de formations que nous avons déjà organisées :",
+    "l1": "Appliquer le principe d'accessibilité universelle dans son OSBL",
+    "l2": "Cybersécurité et confidentialité des données pour les OSBL",
+    "l3": "Rédaction du cahier des charges pour la refonte du site web d'un OSBL",
+    "training_link": "Découvrez nos formations"
   }
 }
