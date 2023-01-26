@@ -1,6 +1,6 @@
 const headerNavLinks = [
   {
-    href: '/informer',
+    href: '/information',
     title: 'inform',
     subLinks: [
       // { href: '/informer', title: 'Informer' },
@@ -11,7 +11,7 @@ const headerNavLinks = [
   },
   { href: '/conseil', title: 'consult' },
   {
-    href: '/outiller',
+    href: '/outils',
     title: 'tools',
     subLinks: [
       // { href: '/outiller', title: 'Outiller' },
