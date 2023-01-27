@@ -65,7 +65,7 @@ export default function Contact() {
               autoComplete="off"
             />
           </div>
-          <SubmitButton color="primary" type="mail">
+          <SubmitButton color="primary" type="mail" className="mx-auto sm:mx-0">
             {t('send')}
           </SubmitButton>
         </form>
