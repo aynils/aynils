@@ -1,7 +1,7 @@
 import { Children, useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { Fragment } from 'preact'
-import Link from 'next/link'
+import Link from '@/components/Link'
 import { useTranslation } from 'next-i18next'
 import headerNavLinks from '@/data/headerNavLinks'
 

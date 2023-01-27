@@ -1,6 +1,6 @@
 import languageDetector from '../lib/languageDetector'
 import { useRouter } from 'next/router'
-import Link from 'next/link'
+import Link from '@/components/Link'
 
 const LanguageSwitchLink = ({ locale, ...rest }) => {
   const router = useRouter()
