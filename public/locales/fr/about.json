@@ -26,7 +26,7 @@
     },
     "commitment2": {
       "title": "Accessibilité",
-      "p1": "Nous respectons le principe d'accessibilité et développons nos outils de façon à les rendre accessibles par défaut.",
+      "p1": "Nous respectons le principe d'accessibilité universelle et développons nos outils de façon à les rendre accessibles par défaut.",
       "p2": "Nos outils respectent au minimum la norme AA des WCAG2 qui sont les lignes directrices de l'organisme de référence : la Web Accessibility Initiative.",
       "p3": "Si votre projet requiert des adaptations spécifiques, nous serons heureux d'en tenir compte dans sa réalisation."
     },
