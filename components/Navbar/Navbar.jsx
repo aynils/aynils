@@ -35,7 +35,6 @@ const Navbar = () => {
                           absolute
                           !-left-4
                           z-50
-                          m-0
                           hidden
                           min-w-max
                           list-none
@@ -52,7 +51,7 @@ const Navbar = () => {
                     aria-labelledby="dropdownMenuButton1"
                   >
                     {link.subLinks.map((subLink) => (
-                      <li key={subLink.title}>
+                      <li key={subLink.title} className="my-0">
                         <a
                           className="
                                   dropdown-item
@@ -60,8 +59,8 @@ const Navbar = () => {
                                   w-full
                                   whitespace-nowrap
                                   bg-transparent
-                                  py-0
-                                  px-4
+                                  py-4
+                                  px-6
                                   text-2xl
                                   font-normal
                                   text-primary-700

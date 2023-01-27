@@ -15,9 +15,9 @@ const headerNavLinks = [
     title: 'tools',
     subLinks: [
       // { href: '/outiller', title: 'Outiller' },
+      { href: '/formations', title: 'trainings' },
       { href: '/la-bibli', title: 'bibli' },
       { href: '/feuille-de-temps', title: 'feuilledetemps' },
-      { href: '/formations', title: 'trainings' },
     ],
   },
   { href: '/a-propos', title: 'about' },
