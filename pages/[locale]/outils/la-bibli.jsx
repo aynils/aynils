@@ -23,6 +23,8 @@ export default function LaBibli() {
         id={t('labibli.title')}
         backgroundColor="bg-primary-0"
         image={
+          //TODO: change to labibli image
+
           <ToolsIllustration
             className="h-[30%] w-full"
             viewBox="000 200 980 100"

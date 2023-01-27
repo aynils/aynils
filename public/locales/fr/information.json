@@ -12,5 +12,42 @@
     "link_guides": "Les guides",
     "link_resources": "Les ressources",
     "link_articles": "Les articles"
+  },
+  "articles": {
+    "title": "Articles",
+    "subtitle": "Des articles d'opinion ou d'information",
+    "description": "Vous trouverez ici des articles d'opinion ou d'information à propos du numérique",
+    "p1": "Nous terminons actuellement une enquête sur les bonnes pratiques du numérique à travers le pays.",
+    "p2": "Une fois l'enquête terminée, nous publierons une série d'articles ici.",
+    "p3": "Quelques exemples :",
+    "p4": "Revenez nous voir bientôt.",
+    "l1": "Comment gérer les mots de passe de votre OSBL",
+    "l2": "Les règles de base pour protéger les données de vos membres",
+    "l3": "Pourquoi vous ne devriez pas utiliser Google Analytics pour votre OSBL",
+    "l4": " Comment obtenir des financements pour entamer ma transition numérique"
+  },
+  "guides": {
+    "title": "Guides",
+    "subtitle": "Des guides complets pour vous accompager dans votre utilisation du numérique",
+    "description": "Vous trouverez ici des articles d'opinion ou d'information à propos du numérique",
+    "p1": "Nous terminons actuellement une enquête sur les bonnes pratiques du numérique à travers le pays.",
+    "p2": "Une fois l'enquête terminée, nous publierons une série de guides ici.",
+    "p3": "Quelques exemples :",
+    "p4": "Revenez nous voir bientôt.",
+    "l1": "Le guide de la sécurité et la confidentialité des données pour les OSBL",
+    "l2": "Réussir la refonte de votre site web : le guide complet",
+    "l3": "Comment créer des adresses courriels pour votre OSBL",
+    "l4": "Comment obtenir la suite Microsoft Office 365 gratuitement pour votre organisme"
+  },
+  "resources": {
+    "title": "Ressources",
+    "subtitle": "Des modèles de documents libres de droits à réutiliser",
+    "description": "Vous trouverez ici des modèles de documents à réutiliser.",
+    "p1": "Nous terminons actuellement une enquête sur les bonnes pratiques du numérique à travers le pays.",
+    "p2": "Une fois l'enquête terminée, nous publierons une série de documents ici.",
+    "p3": "Quelques exemples :",
+    "p4": "Revenez nous voir bientôt.",
+    "l1": "Politique de confidentialité et sécurité des données",
+    "l2": "Modèle d'appel d'offres pour la refonte d'un site web"
   }
 }

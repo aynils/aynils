@@ -23,6 +23,7 @@ export default function FeuilleDeTemps() {
         id={t('feuilledetemps.title')}
         backgroundColor="bg-primary-0"
         image={
+          //TODO: change to fdt image
           <ToolsIllustration
             className="h-[30%] w-full"
             viewBox="000 200 980 100"
