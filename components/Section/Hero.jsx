@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <GradientSection>
       <container className="mx-auto block max-w-7xl">
-        <div className="px-6 pt-0 text-center text-gray-800 lg:py-20 lg:px-24  lg:text-left">
+        <div className="px-6 pt-0 pb-8 text-center text-gray-800 lg:px-24 lg:pt-20 lg:pb-24  lg:text-left">
           <div className="container mx-auto ">
             <div className="flex grid items-center  gap-12 lg:grid-cols-3">
               <div className="col-span-2 mt-12 flex flex-col justify-center lg:mt-0">
