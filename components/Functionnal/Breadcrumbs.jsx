@@ -102,7 +102,7 @@ const BreadcrumbItem = ({ children, href, isCurrent, ...props }) => {
       {isCurrent ? (
         <>{children}</>
       ) : (
-        <Link href={href} passHref>
+        <Link href={href}>
           <a>{children}</a>
         </Link>
       )}
