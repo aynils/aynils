@@ -4,13 +4,15 @@ import { useRouter } from 'next/router'
 
 const CustomLink = ({ skipLocaleHandling, href, ...rest }) => {
   const router = useRouter()
-  const locale = rest.locale || router.query.locale || ''
+  const locale = rest.locale || router.query.locale || 'fr'
 
   href = href || router.asPath
   if (href.indexOf('http') === 0) skipLocaleHandling = true
   if (locale && !skipLocaleHandling) {
     href = href ? `/${locale}${href}` : router.pathname.replace('[locale]', locale)
   }
+
+  console.log('hehe', href)
 
   const isInternalLink = href && href.startsWith('/')
   const isAnchorLink = href && href.startsWith('#')

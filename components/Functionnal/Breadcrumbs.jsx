@@ -13,7 +13,6 @@ const Breadcrumbs = ({ page }) => {
 
   const findLabelForPath = (path) => {
     const links = [...headerNavLinks].map((link) => link)
-    console.log('links', links)
     const subLinks = headerNavLinks.flatMap((link) => link.subLinks).filter((link) => link)
     const allLinks = [...links, ...subLinks]
     const link = allLinks.find((link) => link.href === `/${path}`)
