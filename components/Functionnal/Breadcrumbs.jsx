@@ -43,7 +43,7 @@ const Breadcrumbs = ({ page }) => {
   return (
     <Breadcrumb page={page}>
       <BreadcrumbItem isCurrent={router.pathname === '/'} href="/">
-        <i className="inline-block">
+        <i className="inline-block ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -98,12 +98,12 @@ const Breadcrumb = ({ children }) => {
 
 const BreadcrumbItem = ({ children, href, isCurrent, ...props }) => {
   return (
-    <li className="mx-3 inline " {...props}>
+    <li className="mx-3 inline whitespace-nowrap" {...props}>
       {isCurrent ? (
         <>{children}</>
       ) : (
         <Link href={href}>
-          <a>{children}</a>
+          <a className="whitespace-nowrap">{children}</a>
         </Link>
       )}
     </li>
