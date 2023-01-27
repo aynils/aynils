@@ -5,8 +5,6 @@ import siteMetadata from '@/data/siteMetadata'
 import PageHeader from '@/components/Section/PageHeader'
 import Section from '@/components/Section/Section'
 import Button from '@/components/Button/Button'
-import TrainingIllustration from '../../public/static/images/undraw_teaching_re_g7e3.svg'
-import ConsultIllustration from '../../public/static/images/undraw_solution_mindset_re_57bf.svg'
 import ToolsIllustration from '../../public/static/images/undraw_blogging_re_kl0d.svg'
 
 const getStaticProps = makeStaticProps(['tools', 'common'], {})
@@ -44,7 +42,7 @@ export default function Tools() {
           <li className={'task-list-item'}>{t('tools.l1')}</li>
           <li className={'task-list-item'}>{t('tools.l2')}</li>
         </ul>
-        <div className="mt-10 flex justify-between">
+        <div className="mt-10 justify-between md:flex">
           <Button
             color={'primary'}
             type="externalLink"

@@ -42,7 +42,7 @@ export default function Information() {
           <li className={'task-list-item'}>{t('information.l2')}</li>
           <li className={'task-list-item'}>{t('information.l3')}</li>
         </ul>
-        <div className="mt-10 flex justify-between">
+        <div className="mt-10 justify-between md:flex">
           <Button color={'primary'} type="noicon" href={'/information/guides'}>
             {t('information.link_guides')}
           </Button>
