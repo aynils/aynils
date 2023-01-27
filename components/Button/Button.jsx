@@ -62,4 +62,13 @@ const Button = ({ color, type, children, className, href, target }) => {
   )
 }
 
+export const SubmitButton = ({ color, type, children, className, href, target }) => {
+  return (
+    <button type="submit" className={`button ${color} ${className}`}>
+      {children}
+      {addIcon(type, color)}
+    </button>
+  )
+}
+
 export default Button
