@@ -12,8 +12,6 @@ const CustomLink = ({ skipLocaleHandling, href, ...rest }) => {
     href = href ? `/${locale}${href}` : router.pathname.replace('[locale]', locale)
   }
 
-  console.log('hehe', href)
-
   const isInternalLink = href && href.startsWith('/')
   const isAnchorLink = href && href.startsWith('#')
 

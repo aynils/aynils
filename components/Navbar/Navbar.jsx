@@ -51,9 +51,10 @@ const Navbar = () => {
                     aria-labelledby="dropdownMenuButton1"
                   >
                     {link.subLinks.map((subLink) => (
-                      <li key={subLink.title} className="my-0">
-                        <a
-                          className="
+                      <Link
+                        key={`${link.href}${subLink.href}`}
+                        href={`${link.href}${subLink.href}`}
+                        className="
                                   dropdown-item
                                   block
                                   w-full
@@ -66,11 +67,9 @@ const Navbar = () => {
                                   text-primary-700
                                   hover:bg-primary-100
                                 "
-                          href={`${link.href}${subLink.href}`}
-                        >
-                          {t(subLink.title)}
-                        </a>
-                      </li>
+                      >
+                        {t(subLink.title)}
+                      </Link>
                     ))}
                   </ul>
                 </div>
