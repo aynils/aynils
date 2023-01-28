@@ -54,13 +54,6 @@ const securityHeaders = [
   },
 ]
 
-const headers = [
-  {
-    key: 'Cache-Control',
-    value: 'public, max-age=31536000, immutable',
-  },
-]
-
 module.exports = withBundleAnalyzer({
   images: {
     loader: 'imgix',
@@ -76,7 +69,17 @@ module.exports = withBundleAnalyzer({
     return [
       {
         source: '/(.*)',
-        headers: [...headers, ...securityHeaders],
+        headers: securityHeaders,
+      },
+      {
+        source: '/:all*(svg|jpg|png|js|css)',
+        locale: false,
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, must-revalidate',
+          },
+        ],
       },
     ]
   },
