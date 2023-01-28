@@ -14,8 +14,8 @@ export default function Contact() {
   return (
     <>
       <PageSEO
-        title={`${siteMetadata.defaultTitlePrefix}${t('page_title')}`}
         description={t('page_description')}
+        title={`${siteMetadata.defaultTitlePrefix}${t('page_title')}`}
       />
       <PageHeader title={t('page_title')} />
       <Section id={t('form.title')} backgroundColor="bg-primary-0">
@@ -24,7 +24,7 @@ export default function Contact() {
           <h2>{t('form.title')}</h2>
         </header>
         <p>{t('form.p1')}</p>
-        <form action="https://getform.io/f/cdcc705d-9e67-49e1-9c5e-d042733c3293" method="POST">
+        <form action="https://static-assistant-hmnx6.ondigitalocean.app/contact/form" method="POST">
           <div className="flex flex-col">
             <label htmlFor="name" aria-required>
               {t('name')}
@@ -49,8 +49,20 @@ export default function Contact() {
               className="text-input"
               type="email"
               id="email"
-              name="email"
+              name="reply_to"
               autoComplete="email"
+            />
+          </div>
+          <div className="hidden" aria-hidden aria-disabled>
+            <label htmlFor="subject" aria-required>
+              {t('subject')}
+            </label>
+            <input
+              className="text-input"
+              type="subject"
+              id="subject"
+              name="subject"
+              value="Contact depuis le site Aynils.ca"
             />
           </div>
           <div className="flex flex-col">
