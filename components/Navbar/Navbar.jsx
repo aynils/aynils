@@ -1,5 +1,4 @@
 import Link from '@/components/Link'
-import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import MobileNavbar from '@/components/Navbar/MobileNavbar'
 import LogoHorizontal from '../../public/static/images/logos/aynils_horizontal.svg'

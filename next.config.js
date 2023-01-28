@@ -54,6 +54,13 @@ const securityHeaders = [
   },
 ]
 
+const headers = [
+  {
+    key: 'Cache-Control',
+    value: 'public, max-age=31536000, immutable',
+  },
+]
+
 module.exports = withBundleAnalyzer({
   // i18n,
   images: {
@@ -70,7 +77,7 @@ module.exports = withBundleAnalyzer({
     return [
       {
         source: '/(.*)',
-        headers: securityHeaders,
+        headers: [...headers, ...securityHeaders],
       },
     ]
   },
