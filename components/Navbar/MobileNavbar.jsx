@@ -64,7 +64,7 @@ const MobileNavbar = () => {
               return (
                 <div key={link.title} className="px-12 py-4">
                   <button
-                    id={`menu-button-${link.title}`}
+                    id={`menu-accordion-${link.title}`}
                     className="accordion-item
                                text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
                     type="button"
@@ -78,7 +78,7 @@ const MobileNavbar = () => {
                   <div
                     id={link.title}
                     className="collapse accordion-collapse border-0"
-                    aria-labelledby={`menu-button-${link.title}`}
+                    aria-labelledby={`menu-accordion-${link.title}`}
                     data-bs-parent="#mobileMenu"
                   >
                     <div className="accordion-body py-4 px-5">
