@@ -9,7 +9,7 @@ const Navbar = () => {
   const { t } = useTranslation('common')
   return (
     <nav className="mx-auto flex h-24 w-full max-w-7xl items-center justify-between bg-primary-0 pl-8 pr-8 pt-5 pb-2">
-      <Link href="/" aria-label={siteMetadata.headerTitle}>
+      <Link href="/" aria-label="home page">
         <LogoHorizontal className="mb-2 h-10 w-full" />
       </Link>
       <div className="flex items-center text-base leading-5">
