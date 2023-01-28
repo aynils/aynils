@@ -62,7 +62,6 @@ const headers = [
 ]
 
 module.exports = withBundleAnalyzer({
-  // i18n,
   images: {
     loader: 'imgix',
     path: 'https://aynils.imgix.net',
