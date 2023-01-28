@@ -23,7 +23,7 @@ const Navbar = () => {
                 >
                   <a
                     className="dropdown-toggle"
-                    id="dropdownMenuButton1"
+                    id={`menu-button-${link.title}`}
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
@@ -48,7 +48,7 @@ const Navbar = () => {
                           text-base
                           shadow-lg
                         "
-                    aria-labelledby="dropdownMenuButton1"
+                    aria-labelledby={`menu-button-${link.title}`}
                   >
                     {link.subLinks.map((subLink) => (
                       <Link
