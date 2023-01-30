@@ -62,7 +62,7 @@ export default function Contact() {
               type="subject"
               id="subject"
               name="subject"
-              value="Contact depuis le site Aynils.ca"
+              defaultValue="Contact depuis le site Aynils.ca"
             />
           </div>
           <div className="flex flex-col">
