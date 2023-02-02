@@ -40,7 +40,7 @@ export default function Home() {
         <p>{t('inform_section.p1')}</p>
         <p>{t('inform_section.p2')}</p>
         <div className="mt-10 lg:mt-20">
-          <Button color={'secondary'} type="noicon" href={'/information'}>
+          <Button color={'secondary'} type="noicon" href={'/fr/information'}>
             {t('inform_section.inform_link')}
           </Button>
         </div>
