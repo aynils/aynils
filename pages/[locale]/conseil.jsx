@@ -53,7 +53,7 @@ export default function Consult() {
         <p>{t('consult.consult4.p1')}</p>
         <p>{t('consult.consult4.p2')}</p>
         <div className="mt-10">
-          <Button color={'secondary'} type="noicon" href={'/contact'}>
+          <Button color={'secondary'} type="noicon" href={'/fr/contact'}>
             {t('common:contact')}
           </Button>
         </div>

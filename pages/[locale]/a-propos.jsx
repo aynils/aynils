@@ -101,7 +101,7 @@ export default function APropos() {
         <h3>{t('commitments.commitment5.title')}</h3>
         <p>{t('commitments.commitment5.p1')}</p>
         <div className="mt-10">
-          <Button color={'secondary'} type="noicon" href={'/contact'}>
+          <Button color={'secondary'} type="noicon" href={'/fr/contact'}>
             {t('common:contact')}
           </Button>
         </div>
