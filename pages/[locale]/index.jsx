@@ -40,7 +40,7 @@ export default function Home() {
         <p>{t('inform_section.p1')}</p>
         <p>{t('inform_section.p2')}</p>
         <div className="mt-10 lg:mt-20">
-          <Button color={'secondary'} type="noicon" href={'/fr/information'}>
+          <Button color={'secondary'} type="noicon" href={'/fr/information/'}>
             {t('inform_section.inform_link')}
           </Button>
         </div>
@@ -70,7 +70,7 @@ export default function Home() {
           <li className={'task-list-item'}>{t('consult_section.l2')}</li>
         </ul>
         <div className="mt-10 lg:mt-20">
-          <Button color={'secondary'} type="noicon" href={'/fr/conseil'}>
+          <Button color={'secondary'} type="noicon" href={'/fr/conseil/'}>
             {t('consult_section.consult_link')}
           </Button>
         </div>
@@ -96,7 +96,7 @@ export default function Home() {
         <p>{t('tools_section.p3')}</p>
 
         <div className="mt-10">
-          <Button color={'secondary'} type="noicon" href={'/fr/outils'}>
+          <Button color={'secondary'} type="noicon" href={'/fr/outils/'}>
             {t('tools_section.tools_link')}
           </Button>
         </div>
@@ -114,7 +114,7 @@ export default function Home() {
           <li className={'task-list-item'}>{t('training_section.l3')}</li>
         </ul>
         <div className="mt-10">
-          <Button color={'secondary'} type="noicon" href={'/fr/outils/formations'}>
+          <Button color={'secondary'} type="noicon" href={'/fr/outils/formations/'}>
             {t('training_section.training_link')}
           </Button>
         </div>
