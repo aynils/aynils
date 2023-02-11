@@ -2,9 +2,7 @@
 name: Séraphin Vandegar
 avatar: /static/images/seraphin.jpg
 email: seraphin@aynils.ca
-twitter: https://twitter.com/svandegar
 linkedin: https://www.linkedin.com/in/seraphinvandegar
-github: https://github.com/svandegar
 ---
 
 ## À propos de moi
