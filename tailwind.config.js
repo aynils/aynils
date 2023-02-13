@@ -96,7 +96,7 @@ module.exports = {
               backgroundColor: theme('colors.primary.600'),
             },
             code: {
-              color: theme('colors.primary.400'),
+              color: theme('colors.primary.800'),
               backgroundColor: theme('colors.secondary.200'),
               paddingLeft: '4px',
               paddingRight: '4px',

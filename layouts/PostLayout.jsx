@@ -4,8 +4,9 @@ import { BlogSEO } from '@/components/SEO'
 import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
-import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+import { useTranslation } from 'next-i18next'
+import PageHeader from '@/components/Section/PageHeader'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) => {
@@ -19,31 +20,19 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { slug, fileName, date, title, tags } = frontMatter
 
+  const { t } = useTranslation('common')
+
   return (
-    <SectionContainer>
-      <BlogSEO
-        url={`${siteMetadata.siteUrl}/blog/${slug}`}
-        authorDetails={authorDetails}
-        {...frontMatter}
-      />
-      <ScrollTopAndComment />
-      <article>
-        <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
-          <header className="pt-6 xl:pb-6">
-            <div className="space-y-1 text-center md:my-16">
-              <h1>{title}</h1>
-              <dl className="space-y-10">
-                <div>
-                  <dt className="sr-only">Publié le</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time className={'capitalize'} dateTime={date}>
-                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                    </time>
-                  </dd>
-                </div>
-              </dl>
-            </div>
-          </header>
+    <>
+      <PageHeader title={frontMatter.title} />
+      <SectionContainer>
+        <BlogSEO
+          url={`${siteMetadata.siteUrl}/blog/${slug}`}
+          authorDetails={authorDetails}
+          {...frontMatter}
+        />
+        <ScrollTopAndComment />
+        <article>
           <div
             className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"
             style={{ gridTemplateRows: 'auto 1fr' }}
@@ -51,39 +40,57 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             <dl className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
               <dt className="sr-only">Auteurs et autrices</dt>
               <dd>
-                <ul className="flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
+                <ul className="flex flex-col justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
                   {authorDetails.map((author) => (
-                    <li className="flex items-center space-x-2" key={author.name}>
+                    <li className="flex flex-col items-center space-x-2" key={author.name}>
                       {author.avatar && (
                         <Image
                           src={author.avatar}
-                          width="38px"
-                          height="38px"
+                          width="100px"
+                          height="100px"
                           alt="avatar"
                           className="h-10 w-10 rounded-full"
                         />
                       )}
-                      <dl className="whitespace-nowrap text-sm font-medium leading-5">
+                      <dl className="mt-8 whitespace-nowrap text-center font-medium leading-5">
                         <dt className="sr-only">Nom</dt>
-                        <Link href={author.linkedin} className="text-gray-900 dark:text-gray-100">
+                        <Link href={author.linkedin} className="stext-gray-900 dark:text-gray-100">
                           {author.name}
                         </Link>
                       </dl>
                     </li>
                   ))}
+                  <li className="!m-auto w-full">
+                    <dt className="sr-only">Publié le</dt>
+                    <dd className="flex w-full justify-center text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                      <time className={'capitalize'} dateTime={date}>
+                        {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                      </time>
+                    </dd>
+                  </li>
                 </ul>
               </dd>
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(slug)} rel="nofollow">
-                  {'Commenter sur Twitter'}
+                Ce contenu est publié sous la licence
+                <Link
+                  href={'https://creativecommons.org/licenses/by-sa/4.0/deed.fr'}
+                  rel="nofollow"
+                >
+                  {t('cc-by-v4')}
                 </Link>
-                {` • `}
-                <Link href={editUrl(fileName)}>{'Voir sur GitHub'}</Link>
               </div>
-              <Comments frontMatter={frontMatter} />
+              {/*<div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">*/}
+              {/*  <Link href={discussUrl(slug, 'linkedin')} rel="nofollow">*/}
+              {/*    {'Commenter sur LinkedIn'}*/}
+              {/*  </Link>*/}
+              {/*  {` • `}*/}
+              {/*  <Link href={discussUrl(slug, 'facebook')} rel="nofollow">*/}
+              {/*    {'Commenter sur Facebook'}*/}
+              {/*  </Link>*/}
+              {/*</div>*/}
             </div>
             <footer>
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
@@ -118,18 +125,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </div>
                 )}
               </div>
-              <div className="pt-4 xl:pt-8">
-                <Link
-                  href="/blog"
-                  className="text-primary-500 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-300"
-                >
-                  &larr; Retour vers le blog
-                </Link>
-              </div>
             </footer>
           </div>
-        </div>
-      </article>
-    </SectionContainer>
+        </article>
+      </SectionContainer>
+    </>
   )
 }
