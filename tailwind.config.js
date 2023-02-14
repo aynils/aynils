@@ -111,7 +111,7 @@ module.exports = {
               content: 'none',
             },
             details: {
-              backgroundColor: theme('colors.secondary.0'),
+              backgroundColor: theme('colors.primary.0'),
               paddingLeft: '0px',
               paddingRight: '4px',
               paddingTop: '2px',

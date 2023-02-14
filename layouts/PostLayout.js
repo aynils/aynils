@@ -7,6 +7,7 @@ import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import { useTranslation } from 'next-i18next'
 import PageHeader from '@/components/Section/PageHeader'
+import Section from '@/components/Section/Section'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) => {
@@ -25,7 +26,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
   return (
     <>
       <PageHeader title={title} type={type} />
-      <SectionContainer>
+      <Section backgroundColor="bg-primary-0">
         <BlogSEO
           url={`${siteMetadata.siteUrl}/blog/${slug}`}
           authorDetails={authorDetails}
@@ -129,7 +130,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             </footer>
           </div>
         </article>
-      </SectionContainer>
+      </Section>
     </>
   )
 }

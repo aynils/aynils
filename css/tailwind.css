@@ -56,6 +56,10 @@ details ul {
   @apply !list-none;
 }
 
+details ul li::before {
+  content: '➤ ';
+}
+
 label {
   @apply capitalize;
 }
