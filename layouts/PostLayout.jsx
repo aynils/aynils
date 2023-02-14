@@ -18,13 +18,13 @@ const discussUrl = (slug) => {
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { slug, fileName, date, title, tags } = frontMatter
+  const { slug, fileName, date, title, tags, type, updatedDate } = frontMatter
 
   const { t } = useTranslation(['blog', 'common'])
 
   return (
     <>
-      <PageHeader title={frontMatter.title} />
+      <PageHeader title={title} type={type} />
       <SectionContainer>
         <BlogSEO
           url={`${siteMetadata.siteUrl}/blog/${slug}`}
@@ -38,7 +38,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
             <dl className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
-              <dt className="sr-only">Auteurs et autrices</dt>
+              <dt className="sr-only">{t('authors')}</dt>
               <dd>
                 <ul className="flex flex-col justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
                   {authorDetails.map((author) => (
@@ -53,7 +53,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                         />
                       )}
                       <dl className="mt-8 whitespace-nowrap text-center font-medium leading-5">
-                        <dt className="sr-only">Nom</dt>
+                        <dt className="sr-only">{t('name')}</dt>
                         <Link href={author.linkedin} className="stext-gray-900 dark:text-gray-100">
                           {author.name}
                         </Link>
@@ -61,7 +61,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     </li>
                   ))}
                   <li className="!m-auto w-full">
-                    <dt className="sr-only">Publié le</dt>
+                    <dt className="sr-only">{t('publication_date')}</dt>
                     <dd className="flex w-full justify-center text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                       <time className={'capitalize'} dateTime={date}>
                         {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
@@ -98,7 +98,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
                 {tags && (
                   <div className="py-4 xl:py-8">
-                    <h2>Mots clés</h2>
+                    <h2>{t('keywords')}</h2>
                     <div className="mt-4 flex flex-wrap">
                       {tags.map((tag) => (
                         <Tag key={tag} text={tag} />
@@ -110,7 +110,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
                     {prev && (
                       <div>
-                        <h2>Article précédent</h2>
+                        <h2>{t('previous')}</h2>
                         <div className="mt-2 text-primary-500 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-300">
                           <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
                         </div>
@@ -118,7 +118,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     )}
                     {next && (
                       <div>
-                        <h2>Article suivant</h2>
+                        <h2>{t('next')}</h2>
                         <div className="mt-2 text-primary-500 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-300">
                           <Link href={`/blog/${next.slug}`}>{next.title}</Link>
                         </div>
