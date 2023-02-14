@@ -1,6 +1,6 @@
 import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
+// import { getAllFilesFrontMatter } from '@/lib/mdx'
 import { useTranslation } from 'next-i18next'
 import { getStaticPaths, makeStaticProps } from '@/lib/getStatic'
 
@@ -11,7 +11,7 @@ import InformIllustration from '../../public/static/images/undraw_online_article
 import ToolsIllustration from '../../public/static/images/undraw_blogging_re_kl0d.svg'
 import ConsultIllustration from '../../public/static/images/undraw_solution_mindset_re_57bf.svg'
 
-const getStaticProps = makeStaticProps(['common'], { posts: await getAllFilesFrontMatter('blog') })
+const getStaticProps = makeStaticProps(['common'])
 export { getStaticPaths, getStaticProps }
 
 export default function Home() {

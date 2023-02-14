@@ -11,6 +11,7 @@ export async function getStaticPaths() {
     paths: posts.map((p) => ({
       params: {
         slug: formatSlug(p).split('/'),
+        locale: 'fr',
       },
     })),
     fallback: false,
