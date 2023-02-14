@@ -1,6 +1,5 @@
 import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
-// import { getAllFilesFrontMatter } from '@/lib/mdx'
 import { useTranslation } from 'next-i18next'
 import { getStaticPaths, makeStaticProps } from '@/lib/getStatic'
 

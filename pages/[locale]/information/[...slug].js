@@ -2,6 +2,7 @@ import fs from 'fs'
 import generateRss from '@/lib/generate-rss'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
+import { getI18nProps, makeStaticProps } from '@/lib/getStatic'
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
@@ -17,6 +18,12 @@ export async function getStaticPaths() {
     fallback: false,
   }
 }
+
+// export const getStaticProps = makeStaticProps(['consult', 'common'],
+//     {
+//       post : await getFileBySlug('blog', params.slug.join('/'))
+//     }
+// )
 
 export async function getStaticProps({ params }) {
   const allPosts = await getAllFilesFrontMatter('blog')
@@ -37,7 +44,10 @@ export async function getStaticProps({ params }) {
     fs.writeFileSync('./public/feed.xml', rss)
   }
 
-  return { props: { post, authorDetails, prev, next } }
+  // return { props: { post, authorDetails, prev, next } }
+  const rest = { post, authorDetails, prev, next }
+  const props = { ...(await getI18nProps({ params }, ['blog', 'common'])), ...rest }
+  return { props }
 }
 
 export default function Blog({ post, authorDetails, prev, next }) {
