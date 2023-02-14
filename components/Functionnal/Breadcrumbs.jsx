@@ -37,7 +37,6 @@ const Breadcrumbs = ({ type }) => {
     if (type) {
       pathArray.splice(pathArray.length - 1, 0, type)
     }
-    console.log('pathArray', pathArray)
 
     const breadcrumbs = pathArray.map((path, index) => {
       const label = findLabelForPath(path)

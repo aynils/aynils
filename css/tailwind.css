@@ -52,6 +52,10 @@ ul {
   @apply list-outside;
 }
 
+details ul {
+  @apply !list-none;
+}
+
 label {
   @apply capitalize;
 }

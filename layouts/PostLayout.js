@@ -73,13 +73,13 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pt-10 pb-8 text-xl dark:prose-dark">{children}</div>
-              <div className="pt-6 pb-6 text-gray-700 dark:text-gray-300">
-                {t('licence')} :
-                <br />
+              <div className="pt-6 pb-6 text-base text-gray-700 dark:text-gray-300">
+                {t('licence')}
                 <Link
                   href={'https://creativecommons.org/licenses/by-sa/4.0/deed.fr'}
                   rel="nofollow"
                 >
+                  {' '}
                   {t('cc-by-v4')}
                 </Link>
               </div>
