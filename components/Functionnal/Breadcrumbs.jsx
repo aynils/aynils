@@ -13,9 +13,9 @@ const Breadcrumbs = ({ type }) => {
 
   const findLabelForPath = (path) => {
     const pathNames = {
-      resource: t('resource'),
-      article: t('article'),
-      guide: t('guide'),
+      ressources: t('resources'),
+      articles: t('articles'),
+      guides: t('guides'),
     }
 
     const links = [...headerNavLinks].map((link) => link)
