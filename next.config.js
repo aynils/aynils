@@ -103,6 +103,8 @@ module.exports = withBundleAnalyzer({
       use: ['@svgr/webpack'],
     })
 
+    config.module.exprContextCritical = false
+
     config.resolve.fallback = { fs: false }
 
     // if (!dev && !isServer) {
