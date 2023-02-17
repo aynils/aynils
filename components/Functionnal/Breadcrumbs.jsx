@@ -108,7 +108,7 @@ const Breadcrumb = ({ children }) => {
   })
 
   return (
-    <nav className="mb-4" aria-label="breadcrumb">
+    <nav className="wrap-anywhere mb-4" aria-label="breadcrumb">
       <ul>{childrenWithSeperator}</ul>
     </nav>
   )
