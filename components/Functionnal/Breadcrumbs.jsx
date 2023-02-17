@@ -113,8 +113,8 @@ const BreadcrumbItem = ({ children, href, isCurrent, ...props }) => {
       {isCurrent ? (
         <>{children}</>
       ) : (
-        <Link href={href}>
-          <a className="whitespace-nowrap">{children}</a>
+        <Link href={href} className="whitespace-nowrap">
+          {children}
         </Link>
       )}
     </li>
