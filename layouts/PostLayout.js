@@ -43,10 +43,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <dd>
                 <ul className="flex flex-col justify-start space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
                   {authorDetails.map((author) => (
-                    <li
-                      className="flex flex-col items-center space-x-2 xl:items-start"
-                      key={author.name}
-                    >
+                    <li className="flex flex-col items-center space-x-2" key={author.name}>
                       {author.avatar && (
                         <Image
                           src={author.avatar}
@@ -56,7 +53,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                           className="h-10 w-10 rounded-full"
                         />
                       )}
-                      <dl className="mt-8 !ml-0 whitespace-nowrap font-medium leading-5 xl:text-left">
+                      <dl className="mt-8 !ml-0 whitespace-nowrap font-medium leading-5">
                         <dt className="sr-only">{t('name')}</dt>
                         <Link href={author.linkedin} className="text-gray-900 dark:text-gray-100">
                           {author.name}
@@ -66,7 +63,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   ))}
                   <li className="!m-auto w-full">
                     <dt className="sr-only">{t('publication_date')}</dt>
-                    <dd className="flex w-full justify-center text-base font-medium leading-6 text-gray-500 dark:text-gray-400 xl:justify-start">
+                    <dd className="flex w-full justify-center text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                       <time className={'capitalize'} dateTime={date}>
                         {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                       </time>
@@ -99,16 +96,16 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             </div>
             <footer>
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
-                {tags && (
-                  <div className="py-4 xl:py-8">
-                    <h3 className={'mt-0'}>{t('common:tags')}</h3>
-                    <div className="mt-0 block flex-wrap">
-                      {tags.map((tag) => (
-                        <Tag key={tag} text={tag} />
-                      ))}
-                    </div>
-                  </div>
-                )}
+                {/*{tags && (*/}
+                {/*  <div className="py-4 xl:py-8">*/}
+                {/*    <h3 className={'mt-0'}>{t('common:tags')}</h3>*/}
+                {/*    <div className="mt-0 block flex-wrap">*/}
+                {/*      {tags.map((tag) => (*/}
+                {/*        <Tag key={tag} text={tag} />*/}
+                {/*      ))}*/}
+                {/*    </div>*/}
+                {/*  </div>*/}
+                {/*)}*/}
                 {(next || prev) && (
                   <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
                     {prev && (
