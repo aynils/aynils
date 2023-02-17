@@ -30,6 +30,7 @@ h1 {
   @apply text-4xl font-semibold sm:text-6xl;
   letter-spacing: theme('letterSpacing.wide');
   @apply mb-6 lg:mb-8;
+  @apply leading-normal;
 }
 
 h2 {
@@ -140,4 +141,8 @@ label {
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.wrap-anywhere {
+  overflow-wrap: anywhere;
 }
