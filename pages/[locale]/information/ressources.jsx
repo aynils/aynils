@@ -6,6 +6,7 @@ import PageHeader from '@/components/Section/PageHeader'
 import Section from '@/components/Section/Section'
 import Button from '@/components/Button/Button'
 import InformIllustration from '/public/static/images/undraw_online_articles_re_yrkj.svg'
+import Link from '@/components/Link'
 
 const getStaticProps = makeStaticProps(['information', 'common'], {})
 export { getStaticPaths, getStaticProps }
@@ -38,11 +39,23 @@ export default function Resources() {
         <p>{t('resources.p1')}</p>
         <p>{t('resources.p2')}</p>
         <p>{t('resources.p3')}</p>
+        <p>{t('resources.p4')}</p>
         <ul>
-          <li className={'task-list-item'}>{t('resources.l1')}</li>
-          <li className={'task-list-item'}>{t('resources.l2')}</li>
+          <li>
+            <Link
+              href={'/information/modele-de-politique-de-confidentialite-des-donnees/'}
+              className="link font-bold"
+              aria-label="Modèle de politique de confidentialité des données"
+            >
+              📄 Modèle de politique de confidentialité des données
+            </Link>
+          </li>
         </ul>
-        <p className="font-bold text-secondary-600">{t('resources.p4')}</p>
+        <p className={'mt-10'}>{t('resources.p5')}</p>
+        <ul>
+          <li>🚧 {t('resources.l2')}</li>
+        </ul>
+        <p>{t('resources.p6')}</p>
       </Section>
     </>
   )

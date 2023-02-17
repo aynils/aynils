@@ -41,9 +41,12 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             <dl className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
               <dt className="sr-only">{t('authors')}</dt>
               <dd>
-                <ul className="flex flex-col justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
+                <ul className="flex flex-col justify-start space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
                   {authorDetails.map((author) => (
-                    <li className="flex flex-col items-center space-x-2" key={author.name}>
+                    <li
+                      className="flex flex-col items-center space-x-2 xl:items-start"
+                      key={author.name}
+                    >
                       {author.avatar && (
                         <Image
                           src={author.avatar}
@@ -53,9 +56,9 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                           className="h-10 w-10 rounded-full"
                         />
                       )}
-                      <dl className="mt-8 whitespace-nowrap text-center font-medium leading-5">
+                      <dl className="mt-8 !ml-0 whitespace-nowrap font-medium leading-5 xl:text-left">
                         <dt className="sr-only">{t('name')}</dt>
-                        <Link href={author.linkedin} className="stext-gray-900 dark:text-gray-100">
+                        <Link href={author.linkedin} className="text-gray-900 dark:text-gray-100">
                           {author.name}
                         </Link>
                       </dl>
@@ -63,7 +66,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   ))}
                   <li className="!m-auto w-full">
                     <dt className="sr-only">{t('publication_date')}</dt>
-                    <dd className="flex w-full justify-center text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                    <dd className="flex w-full justify-center text-base font-medium leading-6 text-gray-500 dark:text-gray-400 xl:justify-start">
                       <time className={'capitalize'} dateTime={date}>
                         {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                       </time>
@@ -98,8 +101,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
                 {tags && (
                   <div className="py-4 xl:py-8">
-                    <h2>{t('keywords')}</h2>
-                    <div className="mt-4 flex flex-wrap">
+                    <h3 className={'mt-0'}>{t('common:tags')}</h3>
+                    <div className="mt-0 block flex-wrap">
                       {tags.map((tag) => (
                         <Tag key={tag} text={tag} />
                       ))}

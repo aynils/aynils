@@ -132,6 +132,10 @@ label {
   @apply ml-3;
 }
 
+.link {
+  @apply text-secondary-600 hover:text-secondary-700;
+}
+
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
