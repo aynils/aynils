@@ -95,7 +95,14 @@ const Breadcrumb = ({ children }) => {
 
   const childrenWithSeperator = childrenArray.map((child, index) => {
     if (index !== childrenArray.length - 1) {
-      return <Fragment key={index}>{child}/</Fragment>
+      return (
+        <Fragment key={index}>
+          {child}
+          <li className="inline" aria-hidden>
+            /
+          </li>
+        </Fragment>
+      )
     }
     return child
   })
