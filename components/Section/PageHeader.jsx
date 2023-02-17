@@ -1,7 +1,7 @@
 import GradientSection from '@/components/Section/GradientSection'
 import Breadcrumbs from '@/components/Functionnal/Breadcrumbs'
 
-const PageHeader = ({ title }) => {
+const PageHeader = ({ title, type }) => {
   return (
     <GradientSection>
       <container className="mx-auto block max-w-7xl">
@@ -10,7 +10,7 @@ const PageHeader = ({ title }) => {
             <div className="flex items-center py-12 md:py-16">
               <div className="mx-auto flex flex-col justify-center  lg:mt-0">
                 <h1>{title}</h1>
-                <Breadcrumbs />
+                <Breadcrumbs type={type} />
               </div>
             </div>
           </div>

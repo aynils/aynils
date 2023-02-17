@@ -4,8 +4,10 @@ import { BlogSEO } from '@/components/SEO'
 import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
-import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+import { useTranslation } from 'next-i18next'
+import PageHeader from '@/components/Section/PageHeader'
+import Section from '@/components/Section/Section'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) => {
@@ -17,89 +19,90 @@ const discussUrl = (slug) => {
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { slug, fileName, date, title, tags } = frontMatter
+  const { slug, fileName, date, title, tags, type, updatedDate } = frontMatter
+
+  const { t } = useTranslation(['blog', 'common'])
 
   return (
-    <SectionContainer>
-      <BlogSEO
-        url={`${siteMetadata.siteUrl}/blog/${slug}`}
-        authorDetails={authorDetails}
-        {...frontMatter}
-      />
-      <ScrollTopAndComment />
-      <article>
-        <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
-          <header className="pt-6 xl:pb-6">
-            <div className="space-y-1 text-center md:my-16">
-              <h1>{title}</h1>
-              <dl className="space-y-10">
-                <div>
-                  <dt className="sr-only">Publié le</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time className={'capitalize'} dateTime={date}>
-                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                    </time>
-                  </dd>
-                </div>
-              </dl>
-            </div>
-          </header>
+    <>
+      <PageHeader title={title} type={type} />
+      <Section backgroundColor="bg-primary-0">
+        <BlogSEO
+          url={`${siteMetadata.siteUrl}/blog/${slug}`}
+          authorDetails={authorDetails}
+          {...frontMatter}
+        />
+        <ScrollTopAndComment />
+        <article>
           <div
             className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
             <dl className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
-              <dt className="sr-only">Auteurs et autrices</dt>
+              <dt className="sr-only">{t('authors')}</dt>
               <dd>
-                <ul className="flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
+                <ul className="flex flex-col justify-start space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
                   {authorDetails.map((author) => (
-                    <li className="flex items-center space-x-2" key={author.name}>
+                    <li
+                      className="flex flex-col items-center space-x-2 xl:items-start"
+                      key={author.name}
+                    >
                       {author.avatar && (
                         <Image
                           src={author.avatar}
-                          width="38px"
-                          height="38px"
+                          width="100px"
+                          height="100px"
                           alt="avatar"
                           className="h-10 w-10 rounded-full"
                         />
                       )}
-                      <dl className="whitespace-nowrap text-sm font-medium leading-5">
-                        <dt className="sr-only">Nom</dt>
-                        <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
-                        <dt className="sr-only">Twitter</dt>
-                        <dd>
-                          {author.twitter && (
-                            <Link
-                              href={author.twitter}
-                              className="text-primary-500 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-300"
-                            >
-                              {author.twitter.replace('https://twitter.com/', '@')}
-                            </Link>
-                          )}
-                        </dd>
+                      <dl className="mt-8 !ml-0 whitespace-nowrap font-medium leading-5 xl:text-left">
+                        <dt className="sr-only">{t('name')}</dt>
+                        <Link href={author.linkedin} className="text-gray-900 dark:text-gray-100">
+                          {author.name}
+                        </Link>
                       </dl>
                     </li>
                   ))}
+                  <li className="!m-auto w-full">
+                    <dt className="sr-only">{t('publication_date')}</dt>
+                    <dd className="flex w-full justify-center text-base font-medium leading-6 text-gray-500 dark:text-gray-400 xl:justify-start">
+                      <time className={'capitalize'} dateTime={date}>
+                        {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                      </time>
+                    </dd>
+                  </li>
                 </ul>
               </dd>
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(slug)} rel="nofollow">
-                  {'Commenter sur Twitter'}
+              <div className="prose max-w-none pt-10 pb-8 text-xl dark:prose-dark">{children}</div>
+              <div className="pt-6 pb-6 text-base text-gray-700 dark:text-gray-300">
+                {t('licence')}
+                <Link
+                  href={'https://creativecommons.org/licenses/by-sa/4.0/deed.fr'}
+                  rel="nofollow"
+                >
+                  {' '}
+                  {t('cc-by-v4')}
                 </Link>
-                {` • `}
-                <Link href={editUrl(fileName)}>{'Voir sur GitHub'}</Link>
               </div>
-              <Comments frontMatter={frontMatter} />
+              {/*<div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">*/}
+              {/*  <Link href={discussUrl(slug, 'linkedin')} rel="nofollow">*/}
+              {/*    {'Commenter sur LinkedIn'}*/}
+              {/*  </Link>*/}
+              {/*  {` • `}*/}
+              {/*  <Link href={discussUrl(slug, 'facebook')} rel="nofollow">*/}
+              {/*    {'Commenter sur Facebook'}*/}
+              {/*  </Link>*/}
+              {/*</div>*/}
             </div>
             <footer>
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
                 {tags && (
                   <div className="py-4 xl:py-8">
-                    <h2>Mots clés</h2>
-                    <div className="mt-4 flex flex-wrap">
+                    <h3 className={'mt-0'}>{t('common:tags')}</h3>
+                    <div className="mt-0 block flex-wrap">
                       {tags.map((tag) => (
                         <Tag key={tag} text={tag} />
                       ))}
@@ -110,7 +113,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
                     {prev && (
                       <div>
-                        <h2>Article précédent</h2>
+                        <h2>{t('previous')}</h2>
                         <div className="mt-2 text-primary-500 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-300">
                           <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
                         </div>
@@ -118,7 +121,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     )}
                     {next && (
                       <div>
-                        <h2>Article suivant</h2>
+                        <h2>{t('next')}</h2>
                         <div className="mt-2 text-primary-500 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-300">
                           <Link href={`/blog/${next.slug}`}>{next.title}</Link>
                         </div>
@@ -127,18 +130,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </div>
                 )}
               </div>
-              <div className="pt-4 xl:pt-8">
-                <Link
-                  href="/blog"
-                  className="text-primary-500 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-300"
-                >
-                  &larr; Retour vers le blog
-                </Link>
-              </div>
             </footer>
           </div>
-        </div>
-      </article>
-    </SectionContainer>
+        </article>
+      </Section>
+    </>
   )
 }

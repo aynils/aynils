@@ -40,7 +40,7 @@ module.exports = {
           bright: '#0C81a0',
         },
         backupSecondary: {
-          0: '#FAE2DC',
+          0: '#fffaf8',
           100: '#F5C5B9',
           200: '#F1A997',
           300: '#EC8C74',
@@ -51,7 +51,7 @@ module.exports = {
           800: '#2E1610',
         },
         secondary: {
-          0: '#FFDCDD',
+          0: '#fbebec',
           100: '#FFCFCF',
           200: '#FFC7C5',
           300: '#FFC2BE',
@@ -96,7 +96,7 @@ module.exports = {
               backgroundColor: theme('colors.primary.600'),
             },
             code: {
-              color: theme('colors.primary.400'),
+              color: theme('colors.primary.800'),
               backgroundColor: theme('colors.secondary.200'),
               paddingLeft: '4px',
               paddingRight: '4px',
@@ -111,8 +111,8 @@ module.exports = {
               content: 'none',
             },
             details: {
-              backgroundColor: theme('colors.secondary.100'),
-              paddingLeft: '4px',
+              backgroundColor: theme('colors.primary.0'),
+              paddingLeft: '0px',
               paddingRight: '4px',
               paddingTop: '2px',
               paddingBottom: '2px',

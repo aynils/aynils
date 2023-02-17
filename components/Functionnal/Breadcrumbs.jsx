@@ -5,34 +5,45 @@ import Link from '@/components/Link'
 import { useTranslation } from 'next-i18next'
 import headerNavLinks from '@/data/headerNavLinks'
 
-const Breadcrumbs = ({ page }) => {
+const Breadcrumbs = ({ type }) => {
   const router = useRouter()
   const [breadcrumbs, setBreadcrumbs] = useState()
 
   const { t } = useTranslation('common')
 
   const findLabelForPath = (path) => {
+    const pathNames = {
+      ressources: t('resources'),
+      articles: t('articles'),
+      guides: t('guides'),
+    }
+
     const links = [...headerNavLinks].map((link) => link)
     const subLinks = headerNavLinks.flatMap((link) => link.subLinks).filter((link) => link)
     const allLinks = [...links, ...subLinks]
     const link = allLinks.find((link) => link.href === `/${path}`)
-    return link?.title
+    const label =
+      link && link.title ? link.title : pathNames[path] ? pathNames[path] : t('publication')
+    return label
   }
 
   useEffect(() => {
     const pathWithoutQuery = router.asPath.split('?')[0]
     let pathArray = pathWithoutQuery.split('/')
     pathArray.shift()
-
     pathArray = pathArray
       .filter((path) => path !== '')
       .filter((path) => !['fr', 'en'].includes(path.toLowerCase()))
+    if (type) {
+      pathArray.splice(pathArray.length - 1, 0, type)
+    }
 
     const breadcrumbs = pathArray.map((path, index) => {
+      const label = findLabelForPath(path)
       const href = '/' + pathArray.slice(0, index + 1).join('/')
       return {
         href,
-        label: t(findLabelForPath(path)),
+        label: t(label),
         isCurrent: index === pathArray.length - 1,
       }
     })
@@ -41,7 +52,7 @@ const Breadcrumbs = ({ page }) => {
   }, [router.asPath, t])
 
   return (
-    <Breadcrumb page={page}>
+    <Breadcrumb>
       <BreadcrumbItem isCurrent={router.pathname === '/'} href="/">
         <i className="inline-block ">
           <svg

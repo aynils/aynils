@@ -52,6 +52,14 @@ ul {
   @apply list-outside;
 }
 
+details ul {
+  @apply !list-none;
+}
+
+details ul li::before {
+  content: '➤ ';
+}
+
 label {
   @apply capitalize;
 }
@@ -122,6 +130,10 @@ label {
   @apply rotate-90;
   @apply inline-block;
   @apply ml-3;
+}
+
+.link {
+  @apply text-secondary-600 hover:text-secondary-700;
 }
 
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */

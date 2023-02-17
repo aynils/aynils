@@ -8,6 +8,7 @@
   "training": "Formation",
   "trainings": "Formations",
   "articles": "Articles",
+  "resources": "Ressources",
   "guides": "Guides",
   "home": "Accueil",
   "bibli": "La Bibli",
@@ -48,5 +49,9 @@
     "l2": "Cybersécurité et confidentialité des données pour les OSBL",
     "l3": "Rédaction du cahier des charges pour la refonte du site web d'un OSBL",
     "training_link": "Découvrez nos formations"
-  }
+  },
+  "cc-by-v4": "Attribution - Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0)",
+  "publication": "Publication",
+  "tags": "Thèmes",
+  "tag": "Thème"
 }
