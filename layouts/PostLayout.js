@@ -55,19 +55,23 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                       )}
                       <dl className="mt-8 !ml-0 whitespace-nowrap font-medium leading-5">
                         <dt className="sr-only">{t('name')}</dt>
-                        <Link href={author.linkedin} className="text-gray-900 dark:text-gray-100">
-                          {author.name}
-                        </Link>
+                        <dd>
+                          <Link href={author.linkedin} className="text-gray-900 dark:text-gray-100">
+                            {author.name}
+                          </Link>
+                        </dd>
                       </dl>
                     </li>
                   ))}
                   <li className="!m-auto w-full">
-                    <dt className="sr-only">{t('publication_date')}</dt>
-                    <dd className="flex w-full justify-center text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                      <time className={'capitalize'} dateTime={date}>
-                        {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                      </time>
-                    </dd>
+                    <dl>
+                      <dt className="sr-only">{t('publication_date')}</dt>
+                      <dd className="flex w-full justify-center text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                        <time className={'capitalize'} dateTime={date}>
+                          {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                        </time>
+                      </dd>
+                    </dl>
                   </li>
                 </ul>
               </dd>
