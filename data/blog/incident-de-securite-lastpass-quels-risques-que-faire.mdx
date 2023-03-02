@@ -1,0 +1,150 @@
+---
+title: 'Incident de sécurité de LastPass : quels risques pour mon OSBL ?'
+date: '2023-03-02'
+updatedDate: '2023-03-02'
+type: 'articles'
+draft: false
+authors:
+  - default
+tags:
+  - actualité
+  - données
+  - sécurité
+images:
+  - /static/images/aynils-default-card.png
+summary: "Incident de sécurité LastPass : Que cela signifie-t-il exactement ? Que s'est-il passé et quelles données ont été compromises ? Quel est l'impact sur mon organisme sans but lucratif et comment réagir ?"
+---
+
+Ce 1er mars 2-23, le gestionnaire de mots de passes LastPass a publié une mise à jour sur deux incidents de sécurités survenus ces derniers mois.
+
+Une personne mal intentionnée a eu accès à des données confidentielles enregistrées sur leurs serveurs.
+
+Que cela signifie-t-il exactement ? Que s'est-il passé et quelles données ont été compromises ? Quel est l'impact sur mon organisme sans but lucratif et comment réagir ?
+
+Nous avons lu les rapports d'incidents et vous présentons les informations importantes pour votre OSBL, dans un langage clair.
+
+<TOCInline toc={props.toc} toHeading={2} asDisclosure={true} />
+
+## Comment fonctionne LastPass
+
+Pour bien comprendre ce qui suit, nous vous proposons de commencer par quelques explications sur le fonctionnement de LastPass et des gestionnaires de mots de passe en général.
+
+Un gestionnaire de mots de passe est un outil qui enregistre tous vos mots de passe de façon sécurisée, de façon à ce que vous n'ayez plus à les retenir.
+
+Concrètement, les mots de passes sont enregistrés dans une base de données qui est [chiffrée](https://fr.wikipedia.org/wiki/Chiffrement). Pour accéder aux mots de passe, il est nécessaire de disposer de la clé de déchiffrement. Cette clé est représentée par un unique mot de passe : votre mot de passe maître.
+
+L'avantage de ce système est que vous n'avez plus qu'un seul mot de passe à retenir, au lieu d'un mot de passe par site web.
+
+## Les incidents
+
+LastPass à rapporté deux incidents survenus en 2022.
+
+### Premier incident
+
+Un·e attaquant·e à pu accéder à l'ordinateur d'un·e ingénieur·e logicielle de LastPass. Depuis cet ordinateur, iel a pu accéder à des informations confidentielles appartenant à LastPass mais aucune information de client·es.
+Les données récoltées par l'attaquant·e durant cet incident lui on permis de lancer une seconde attaque.
+
+### Second incident
+
+L'attaquant·e à cette fois ciblé un·e ingénieur·e système de l'entreprise, ce qui lui a permis d'accéder à un backup de données comprenant des données de client·es.
+
+## Les données qui ont été compromises
+
+L'attaquant·e a eu accès aux données de client·es suivantes :
+
+- Certaines adresses courriel ;
+- La base de données chiffrée contenant tous les mots de passes des client·es ;
+- Métadonnées non précisées. Ceci pourrait inclure des informations sur votre localisation ou le type de matériel utilisé, par exemple ;
+- Numéros de téléphones utilisés pour l'[authentification à deux facteurs](https://fr.wikipedia.org/wiki/Double_authentification)  ;
+- Identifiants uniques d'authentification à deux facteurs par application.
+
+## Les risques pour les OSBL
+
+La base de données contenant les mots de passe est chiffrée avec une clé unique par client·e. Cette clé est liée à votre mot de passe maître. Ceci veut dire que le risque dépend de la complexité de celui-ci.
+
+Si vous utilisiez un mot de passe complexe de plus de 12 caractères, il y a peu de chances que l'attaquant·e puisse un jour déchiffrer vos mots de passes. Si vous utilisiez un mot de passe court et simple, le risque d'accès est plus important.
+
+Le risque le plus probable est celui de [hameçonnage](https://fr.wikipedia.org/wiki/Hame%C3%A7onnage). L'attaquant·e ayant accès aux numéros de téléphone et courriel de cerain·es client·es, iel pourra tenter de vous contacter en se faisant passer pour LastPass, dans le but d'obtenir des informations confidentielles ou votre mot de passe. **LastPass ne vous contactera jamais pour vous demander ces informations**. En cas de doute, contactez-les directement depuis [leur site internet](https://support.lastpass.com/fr/contact?articleTitle=Comment%20contacter%20l%E2%80%99assistance%20client%C3%A8le%20pour%20LastPass%C2%A0%3F).
+
+Ensuite, vient le risque lié à l'authentification à deux facteurs. Avec l'identifiant unique, l'attaquant·e pourrait générer des codes nécessaires pour se connecter à votre compte, en plus de votre mot de passe maître.
+
+## Les actions à prendre
+
+Dans son communiqué, LastPass classe les actions à prendre dans deux catégorie, selon que vous utilisiez un compte "personnel ou famille" ou "professionnel".
+
+### Compte personnel ou famille
+
+#### 1. Votre mot de passe maître est-il complexe ?
+
+Si votre mot de passe maître ne fait pas plus de 12 caractères comprenant au moins deux variations (chiffres, majuscules, caractères spéciaux), qu'il est est facilement devinable et/ou qu'il est aussi utilisé ailleurs, nous vous conseillons de le changer.
+
+[Procédure de changement de mot de passe maître](https://support.lastpass.com/fr/help/change-your-master-password-lp020001).
+
+#### 2. Changer la configuration du nombre d'itérations du mot de passe maître
+
+Pour renforcer la sécurité de votre mot de passe maître, LastPass lui fait subir un processus nommé _hachage_. Ce processus est répété de nombreuses fois. 100100 fois pour la plupart des comptes.
+LastPass conseille désormais de changer cette valeur vers 600000.
+
+[Procédure de changement du nombre d'itérations](https://support.lastpass.com/fr/help/how-do-i-change-my-password-iterations-for-lastpass)
+
+### 3. Utilisez l'authentification à deux facteurs ?
+
+Si vous utilisez déjà l'authentification à deux facteurs par application pour LastPass, il est important de changer votre indicateur unique.
+
+Procédure de changement de l'identifiant unique de l'authentification à deux facteurs:
+
+- [avec Google Authenticator](https://support.lastpass.com/fr/help/how-do-i-regenerate-a-key-for-the-google-authenticator-in-lastpass)
+- [avec Microsoft Authenticator](https://support.lastpass.com/fr/help/how-do-i-regenerate-a-key-for-the-microsoft-authenticator-in-lastpass)
+- [avec LastPass Authenticator](https://support.lastpass.com/fr/help/how-do-i-unpair-then-re-pair-my-lastpass-account-with-the-lastpass-authenticator)
+
+Si vous utilisez l'authentification à deux facteurs par téléphone ou que vous n'utilisez pas l'authentification à deux facteurs, nous vous conseillons de l'activer.
+
+[Procédure pour l'activation de l'authentification à deux facteurs](https://support.lastpass.com/fr/help/enable-multifactor-authentication-lp010002)
+
+#### 4. Vérifiez votre score de sécurité
+
+LastPass met à disposition un outil qui permet de calculer votre score de sécurité. Cet outil vérifier plusieurs facteurs comme :
+
+- L'unicité de vos mots de passes ;
+- L'apparition de vos données personnelles dans des rapports d'incidents ou sur le [dark web](https://fr.wikipedia.org/wiki/Dark_web) ;
+- La complexité de vos mots de passes.
+
+[Explications concernant l'utilisation de l'outil de score de sécurité de LastPass.](https://support.lastpass.com/fr/help/how-do-i-use-the-security-dashboard)
+
+#### 5. Restez à l'affut
+
+Gardez à l'oeil l'utilisation de vos comptes en ligne. Si vous avez des doutes concernant un site ou une application, changez-en le mot de passe. C'est aussi l'occasion de remplacer des mots de passes simples par des mots de passes plus complexes et d'activer l'authentification à deux facteurs pour tous les services qui le proposent.
+
+### Compte professionnel
+
+Pour les comptes professionnels, les recommandations individuelle ci-dessus s'appliquent pour toustes les membres de l'équipe.
+
+La différence est que pour ces comptes, une personne est responsable de administration du compte et a la possibilité d'imposer des règles et des changements à toute l'équipe comme, par exemple, la complexité minimale du mot de passe maître ou le changement de celui-ci.
+
+Si vous êtes responsable de l'administration du compte LastPass de votre organisme, vous vous conseillons de partager nos conseils avec votre équipe, en plus d'en forcer l'application.
+
+En plus de cela, comme vous avez des accès importants au compte de l'organisme, il est essentiel que vous appliquiez toutes les mesures de sécurité à votre compte.
+
+## Doit-on quitter LastPass ou éviter de le choisir ?
+
+LastPass vient d'être la cible d'un incident de sécurité. Il est normal de se poser la question et de se demander si vos mots de passes ne seraient pas plus en sécurité ailleurs.
+
+Notre avis est que les mesures mises en place par LastPass pour protéger vos mots de passe correspondent à ce qui est conseillé en 2023. Les concurrent·es appliquent certainement des mesures similaires et font face aux mêmes risques d'attaques.
+
+Aujourd'hui, c'est LastPass qui a subi l'attaque mais demain, ça pourrait être BitWarden, Dashlane ou 1Password. Et le résultat serait certainement identique.
+
+Cette attaque nous prouve une fois de plus que le maillon faible de la sécurité est généralement l'humain. La meilleure façon de se protéger est de se méfier du hameçonnage et d'utiliser les outils de sécurité à notre disposition :
+
+- Mot de passe long et complexe
+- Authentification à deux facteurs
+- Gestionnaire de mot de passes
+
+## Des questions ?
+
+Si vous avez des questions par rapport au contenu de cet article, la cybersécurité ou le numérique pour les organismes sans but lucratif en général, [écrivez-nous](/contact). Ca nous fera plaisir de partager nos connaissances.
+
+## Références
+
+- Communication de LastPass du 1 mars 2023 (en anglais) : https://blog.lastpass.com/2023/03/security-incident-update-recommended-actions/
+- Conseils de LastPass concernant les actions à prendre pour les comptes particuliers et famille (en anglais) : https://support.lastpass.com/help/security-bulletin-recommended-actions-for-free-premium-and-families-customers
+- Conseils de LastPass concernant les actions à prendre pour les comptes professionnels (en anglais) : https://support.lastpass.com/help/security-bulletin-recommended-actions-for-business-administrators

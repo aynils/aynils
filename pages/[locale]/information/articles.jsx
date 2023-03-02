@@ -6,6 +6,7 @@ import PageHeader from '@/components/Section/PageHeader'
 import Section from '@/components/Section/Section'
 import Button from '@/components/Button/Button'
 import InformIllustration from '/public/static/images/undraw_online_articles_re_yrkj.svg'
+import Link from '@/components/Link'
 
 const getStaticProps = makeStaticProps(['information', 'common'], {})
 export { getStaticPaths, getStaticProps }
@@ -39,6 +40,15 @@ export default function Articles() {
         <p>{t('articles.p2')}</p>
         <p>{t('articles.p3')}</p>
         <ul>
+          <li>
+            <Link
+              href={'/information/incident-de-securite-lastpass-quels-risques-que-faire/'}
+              className="link font-bold"
+              aria-label="Modèle de politique de confidentialité des données"
+            >
+              📄 Incident de sécurité de LastPass : quels risques pour mon OSBL?
+            </Link>
+          </li>
           <li className={'task-list-item'}>{t('articles.l1')}</li>
           <li className={'task-list-item'}>{t('articles.l2')}</li>
           <li className={'task-list-item'}>{t('articles.l3')}</li>

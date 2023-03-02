@@ -111,20 +111,20 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 {/*  </div>*/}
                 {/*)}*/}
                 {(next || prev) && (
-                  <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
+                  <div className="flex justify-between py-2 text-center xl:block xl:space-y-8 xl:py-8">
                     {prev && (
                       <div>
-                        <h2>{t('previous')}</h2>
-                        <div className="mt-2 text-primary-500 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-300">
-                          <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
+                        <p className="mb-2 text-base lg:text-lg">{t('previous')}</p>
+                        <div className="mt-0 text-secondary-600 hover:text-secondary-700 dark:text-primary-200 dark:hover:text-primary-300">
+                          <Link href={`/information/${prev.slug}`}>{prev.title}</Link>
                         </div>
                       </div>
                     )}
                     {next && (
                       <div>
-                        <h2>{t('next')}</h2>
-                        <div className="mt-2 text-primary-500 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-300">
-                          <Link href={`/blog/${next.slug}`}>{next.title}</Link>
+                        <p className="mb-2 text-base lg:text-lg">{t('next')}</p>
+                        <div className="mt-2 text-secondary-600 hover:text-secondary-700 dark:text-primary-200 dark:hover:text-primary-300">
+                          <Link href={`/information/${next.slug}`}>{next.title}</Link>
                         </div>
                       </div>
                     )}
