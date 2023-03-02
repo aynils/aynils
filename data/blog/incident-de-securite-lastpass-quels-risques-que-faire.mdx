@@ -17,7 +17,7 @@ summary: "Incident de sécurité LastPass : Que cela signifie-t-il exactement 
 
 Ce 1er mars 2023, le gestionnaire de mots de passes LastPass a publié une mise à jour sur deux incidents de sécurités survenus ces derniers mois.
 
-Une personne mal intentionnée a eu accès à des données confidentielles enregistrées sur leurs serveurs.
+Une personne mal intentionnée a eu accès à des données confidentielles enregistrées sur les serveurs du gestionnaire de mots de passe.
 
 Que cela signifie-t-il exactement ? Que s'est-il passé et quelles données ont été compromises ? Quel est l'impact sur mon organisme sans but lucratif et comment réagir ?
 
@@ -27,9 +27,9 @@ Nous avons lu les rapports d'incidents et vous présentons les informations impo
 
 Pour bien comprendre ce qui suit, nous vous proposons de commencer par quelques explications sur le fonctionnement de LastPass et des gestionnaires de mots de passe en général.
 
-Un gestionnaire de mots de passe est un outil qui enregistre tous vos mots de passe de façon sécurisée, de façon à ce que vous n'ayez plus à les retenir.
+Un gestionnaire de mots de passe est un outil qui enregistre tous vos mots de passe de façon sécurisée, afin que vous n'ayez plus à les retenir.
 
-Concrètement, les mots de passes sont enregistrés dans une base de données qui est [chiffrée](https://fr.wikipedia.org/wiki/Chiffrement). Pour accéder aux mots de passe, il est nécessaire de disposer de la clé de déchiffrement. Cette clé est représentée par un unique mot de passe : votre mot de passe maître.
+Concrètement, les mots de passes sont enregistrés dans une base de données qui est [chiffrée](https://fr.wikipedia.org/wiki/Chiffrement). Pour accéder aux mots de passe, il est nécessaire de posséder la clé de déchiffrement. Cette clé est représentée par un unique mot de passe : votre mot de passe maître.
 
 L'avantage de ce système est que vous n'avez plus qu'un seul mot de passe à retenir, au lieu d'un mot de passe par site web.
 
@@ -44,11 +44,11 @@ Les données récoltées par l'attaquant·e durant cet incident lui on permis de
 
 ### Second incident
 
-L'attaquant·e à cette fois ciblé un·e ingénieur·e système de l'entreprise, ce qui lui a permis d'accéder à un backup de données comprenant des données de client·es.
+L'attaquant·e à cette fois ciblé un·e ingénieur·e système de l'entreprise, ce qui lui a permis d'accéder à une sauvegarde de données comprenant des données de client·es.
 
 ## Les données qui ont été compromises
 
-L'attaquant·e a eu accès aux données de client·es suivantes :
+L'attaquant·e a eu accès aux données confidentielles suivantes :
 
 - Certaines adresses courriel ;
 - La base de données chiffrée contenant tous les mots de passes des client·es ;
@@ -85,7 +85,7 @@ LastPass conseille désormais de changer cette valeur vers 600000.
 
 [Procédure de changement du nombre d'itérations](https://support.lastpass.com/fr/help/how-do-i-change-my-password-iterations-for-lastpass)
 
-### 3. Utilisez l'authentification à deux facteurs ?
+### 3. Utilisez-vous l'authentification à deux facteurs ?
 
 Si vous utilisez déjà l'authentification à deux facteurs par application pour LastPass, il est important de changer votre indicateur unique.
 
@@ -101,11 +101,11 @@ Si vous utilisez l'authentification à deux facteurs par téléphone ou que vous
 
 #### 4. Vérifiez votre score de sécurité
 
-LastPass met à disposition un outil qui permet de calculer votre score de sécurité. Cet outil vérifier plusieurs facteurs comme :
+LastPass met à disposition un outil qui permet de calculer votre score de sécurité. Cet outil vérifie plusieurs facteurs comme :
 
 - L'unicité de vos mots de passes ;
 - L'apparition de vos données personnelles dans des rapports d'incidents ou sur le [dark web](https://fr.wikipedia.org/wiki/Dark_web) ;
-- La complexité de vos mots de passes.
+- La complexité de vos mots de passe.
 
 [Explications concernant l'utilisation de l'outil de score de sécurité de LastPass.](https://support.lastpass.com/fr/help/how-do-i-use-the-security-dashboard)
 
@@ -115,11 +115,11 @@ Gardez à l'oeil l'utilisation de vos comptes en ligne. Si vous avez des doutes 
 
 ### Compte professionnel
 
-Pour les comptes professionnels, les recommandations individuelle ci-dessus s'appliquent pour toustes les membres de l'équipe.
+Si vous utilisez un compte professionnel, les recommandations individuelle ci-dessus s'appliquent pour toustes les membres de l'équipe.
 
-La différence est que pour ces comptes, une personne est responsable de administration du compte et a la possibilité d'imposer des règles et des changements à toute l'équipe comme, par exemple, la complexité minimale du mot de passe maître ou le changement de celui-ci.
+La différence est que pour ces comptes, une personne est responsable de l'administration du compte et a la possibilité d'imposer des règles et des changements à toute l'équipe comme, par exemple, la complexité minimale du mot de passe maître ou le changement de celui-ci.
 
-Si vous êtes responsable de l'administration du compte LastPass de votre organisme, vous vous conseillons de partager nos conseils avec votre équipe, en plus d'en forcer l'application.
+Si vous êtes responsable de l'administration du compte LastPass de votre organisme, vous vous conseillons de partager nos conseils avec votre équipe, en plus d'en imposer l'application.
 
 En plus de cela, comme vous avez des accès importants au compte de l'organisme, il est essentiel que vous appliquiez toutes les mesures de sécurité à votre compte.
 
