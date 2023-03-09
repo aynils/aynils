@@ -49,7 +49,7 @@ const Breadcrumbs = ({ type }) => {
     })
 
     setBreadcrumbs(breadcrumbs)
-  }, [router.asPath, t])
+  }, [router.asPath, t, type])
 
   return (
     <Breadcrumb>

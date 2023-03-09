@@ -9,13 +9,6 @@ import { useTranslation } from 'next-i18next'
 import PageHeader from '@/components/Section/PageHeader'
 import Section from '@/components/Section/Section'
 
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
-const discussUrl = (slug) => {
-  const url = encodeURIComponent(`${siteMetadata.siteUrl}/blog/${slug}`)
-  const text = `@svandegar, je viens de lire cet article et ... %0A%0A`
-  return `https://twitter.com/intent/tweet?url=${url}&text=${text}`
-}
-
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
@@ -28,7 +21,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
       <PageHeader title={title} type={type} />
       <Section backgroundColor="bg-primary-0">
         <BlogSEO
-          url={`${siteMetadata.siteUrl}/blog/${slug}`}
+          url={`${siteMetadata.siteUrl}/fr/information/${slug}`}
           authorDetails={authorDetails}
           {...frontMatter}
         />
