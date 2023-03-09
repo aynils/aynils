@@ -36,8 +36,8 @@ export default function Articles() {
           <p>{t('articles.title')}</p>
           <h2>{t('articles.subtitle')}</h2>
         </header>
-        <p>{t('articles.p1')}</p>
         <p>{t('articles.p2')}</p>
+        {/*<p>{t('articles.p2')}</p>*/}
         <p>{t('articles.p3')}</p>
         <ul>
           <li>
@@ -49,12 +49,7 @@ export default function Articles() {
               📄 Incident de sécurité de LastPass : quels risques pour mon OSBL?
             </Link>
           </li>
-          <li className={'task-list-item'}>{t('articles.l1')}</li>
-          <li className={'task-list-item'}>{t('articles.l2')}</li>
-          <li className={'task-list-item'}>{t('articles.l3')}</li>
-          <li className={'task-list-item'}>{t('articles.l4')}</li>
         </ul>
-        <p className="font-bold text-secondary-600">{t('articles.p4')}</p>
       </Section>
     </>
   )
