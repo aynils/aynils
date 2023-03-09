@@ -50,11 +50,17 @@ export default function Resources() {
               📄 Modèle de politique de confidentialité des données
             </Link>
           </li>
+          <li>
+            <Link
+              href={'/information/modele-cahier-des-charges-refonte-site-internet'}
+              className="link font-bold"
+              aria-label="Modèle de cahier des charges pour la refonte d'un site internet"
+            >
+              📄 Modèle de cahier des charges pour la refonte d'un site internet
+            </Link>
+          </li>
         </ul>
-        <p className={'mt-10'}>{t('resources.p5')}</p>
-        <ul>
-          <li>🚧 {t('resources.l2')}</li>
-        </ul>
+
         <p>{t('resources.p6')}</p>
       </Section>
     </>

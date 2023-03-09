@@ -6,6 +6,7 @@ import PageHeader from '@/components/Section/PageHeader'
 import Section from '@/components/Section/Section'
 import Button from '@/components/Button/Button'
 import InformIllustration from '/public/static/images/undraw_online_articles_re_yrkj.svg'
+import Link from '@/components/Link'
 
 const getStaticProps = makeStaticProps(['information', 'common'], {})
 export { getStaticPaths, getStaticProps }
@@ -37,14 +38,19 @@ export default function Guides() {
         </header>
         <p>{t('guides.p1')}</p>
         <p>{t('guides.p2')}</p>
-        <p>{t('guides.p3')}</p>
+        <p>{t('guides.p4')}</p>
         <ul>
-          <li className={'task-list-item'}>{t('guides.l1')}</li>
-          <li className={'task-list-item'}>{t('guides.l2')}</li>
-          <li className={'task-list-item'}>{t('guides.l3')}</li>
-          <li className={'task-list-item'}>{t('guides.l4')}</li>
+          <li>
+            <Link
+              href={'/information/guide-cahier-des-charges-refonte-site-internet'}
+              className="link font-bold"
+              aria-label="Guide de rédaction du cahier des charges pour la refonte d'un site Web"
+            >
+              📄 Guide de rédaction du cahier des charges pour la refonte d'un site Web
+            </Link>
+          </li>
         </ul>
-        <p className="font-bold text-secondary-600">{t('guides.p4')}</p>
+        <p>{t('guides.p6')}</p>
       </Section>
     </>
   )
