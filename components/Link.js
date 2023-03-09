@@ -7,7 +7,7 @@ const CustomLink = ({ skipLocaleHandling, href, ...rest }) => {
   const locale = rest.locale || router.query.locale || 'fr'
 
   href = href || router.asPath
-  if (href.indexOf('http') === 0) skipLocaleHandling = true
+  if (href.indexOf('http') === 0 || href.indexOf('mailto') === 0) skipLocaleHandling = true
   if (locale && !skipLocaleHandling) {
     href = href ? `/${locale}${href}` : router.pathname.replace('[locale]', locale)
   }
