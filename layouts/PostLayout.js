@@ -115,7 +115,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     {prev && (
                       <div>
                         <p className="mb-2 text-base lg:text-lg">{t('previous')}</p>
-                        <div className="mt-0 text-secondary-600 hover:text-secondary-700 dark:text-primary-200 dark:hover:text-primary-300">
+                        <div className="mt-0 text-base text-secondary-600 hover:text-secondary-700 dark:text-primary-200 dark:hover:text-primary-300 lg:text-lg">
                           <Link href={`/information/${prev.slug}`}>{prev.title}</Link>
                         </div>
                       </div>
@@ -123,7 +123,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     {next && (
                       <div>
                         <p className="mb-2 text-base lg:text-lg">{t('next')}</p>
-                        <div className="mt-2 text-secondary-600 hover:text-secondary-700 dark:text-primary-200 dark:hover:text-primary-300">
+                        <div className="mt-2 text-base text-secondary-600 hover:text-secondary-700 dark:text-primary-200 dark:hover:text-primary-300 lg:text-lg">
                           <Link href={`/information/${next.slug}`}>{next.title}</Link>
                         </div>
                       </div>
