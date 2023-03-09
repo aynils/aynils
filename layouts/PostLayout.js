@@ -33,12 +33,12 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
           {...frontMatter}
         />
         <ScrollTopAndComment />
-        <article>
+        <article className={'mx-auto max-w-none xl:max-w-3xl'}>
           <div
-            className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"
+            className="divide-y divide-gray-200 pb-8 dark:divide-gray-700"
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
-            <dl className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
+            <dl className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-0 xl:dark:border-gray-700">
               <dt className="sr-only">{t('authors')}</dt>
               <dd>
                 <ul className="flex flex-col justify-start space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
@@ -76,8 +76,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 </ul>
               </dd>
             </dl>
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div className="prose max-w-none pt-10 pb-8 text-xl dark:prose-dark">{children}</div>
+            <div className="mx-auto max-w-none divide-y divide-gray-200 dark:divide-gray-700">
+              <div className="prose pt-10 pb-8 text-xl dark:prose-dark ">{children}</div>
               <div className="pt-6 pb-6 text-base text-gray-700 dark:text-gray-300">
                 {t('licence')}
                 <Link
@@ -99,7 +99,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               {/*</div>*/}
             </div>
             <footer>
-              <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
+              <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700">
                 {/*{tags && (*/}
                 {/*  <div className="py-4 xl:py-8">*/}
                 {/*    <h3 className={'mt-0'}>{t('common:tags')}</h3>*/}
@@ -111,7 +111,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 {/*  </div>*/}
                 {/*)}*/}
                 {(next || prev) && (
-                  <div className="flex justify-between py-2 text-center xl:block xl:space-y-8 xl:py-8">
+                  <div className="block space-y-8 py-2 py-8">
                     {prev && (
                       <div>
                         <p className="mb-2 text-base lg:text-lg">{t('previous')}</p>
