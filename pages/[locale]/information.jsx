@@ -42,14 +42,29 @@ export default function Information() {
           <li className={'task-list-item'}>{t('information.l2')}</li>
           <li className={'task-list-item'}>{t('information.l3')}</li>
         </ul>
-        <div className="mt-10 justify-between md:flex">
-          <Button color={'primary'} type="noicon" href={'/fr/information/guides/'}>
+        <div className="mt-10 sm:flex sm:justify-between">
+          <Button
+            className="!w-full justify-center sm:mx-auto sm:!w-fit"
+            color={'primary'}
+            type="noicon"
+            href={'/fr/information/guides/'}
+          >
             {t('information.link_guides')}
           </Button>
-          <Button color={'primary'} type="noicon" href={'/fr/information/ressources/'}>
+          <Button
+            className="!w-full justify-center sm:mx-auto sm:!w-fit"
+            color={'primary'}
+            type="noicon"
+            href={'/fr/information/ressources/'}
+          >
             {t('information.link_resources')}
           </Button>
-          <Button color={'primary'} type="noicon" href={'/fr/information/articles/'}>
+          <Button
+            className="!w-full justify-center sm:mx-auto sm:!w-fit"
+            color={'primary'}
+            type="noicon"
+            href={'/fr/information/articles/'}
+          >
             {t('information.link_articles')}
           </Button>
         </div>

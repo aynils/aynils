@@ -9,9 +9,9 @@
     "l1": "Guides : des guides complets pour vous accompager dans votre utilisation du numérique",
     "l2": "Ressources : des modèles de documents libres de droits à réutiliser",
     "l3": "Articles : des articles d'opinion ou d'information à propos du numérique",
-    "link_guides": "Les guides",
-    "link_resources": "Les ressources",
-    "link_articles": "Les articles"
+    "link_guides": "Guides",
+    "link_resources": "Ressources",
+    "link_articles": "Articles"
   },
   "articles": {
     "title": "Articles",
