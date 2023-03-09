@@ -57,7 +57,7 @@ const securityHeaders = [
 module.exports = withBundleAnalyzer({
   images: {
     loader: 'imgix',
-    path: 'https://aynils.imgix.net',
+    path: 'https://aynils-website.imgix.net',
   },
   trailingSlash: true,
   reactStrictMode: true,
