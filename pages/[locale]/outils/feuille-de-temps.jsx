@@ -43,6 +43,8 @@ export default function FeuilleDeTemps() {
           <li className={'task-list-item'}>{t('feuilledetemps.l1')}</li>
           <li className={'task-list-item'}>{t('feuilledetemps.l2')}</li>
           <li className={'task-list-item'}>{t('feuilledetemps.l3')}</li>
+          <li className={'task-list-item'}>{t('feuilledetemps.l4')}</li>
+          <li className={'task-list-item'}>{t('feuilledetemps.l5')}</li>
         </ul>
         <div className="mt-10 flex justify-between">
           <Button
