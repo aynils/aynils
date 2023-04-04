@@ -78,7 +78,7 @@ const Navbar = () => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="dropdown text-primary-900 relative p-1 text-2xl font-light hover:text-primary-600 dark:text-primary-100 dark:hover:text-primary-400 lg:p-4"
+                  className="dropdown text-primary-900  relative p-1  text-2xl font-light hover:text-primary-600 dark:text-primary-100 dark:hover:text-primary-400 lg:p-4"
                 >
                   {t(link.title)}
                 </Link>
