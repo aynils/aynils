@@ -49,6 +49,15 @@ export default function Guides() {
               📄 Guide de rédaction du cahier des charges pour la refonte d'un site Web
             </Link>
           </li>
+          <li>
+            <Link
+              href={'/information/choisir-un-mot-de-passe-securitaire'}
+              className="link font-bold"
+              aria-label="Choisir un mot de passe sécuritaire"
+            >
+              📄 Choisir un mot de passe sécuritaire
+            </Link>
+          </li>
         </ul>
         <p>{t('guides.p6')}</p>
       </Section>

@@ -53,7 +53,9 @@ const TOCInline = ({
     <>
       {asDisclosure ? (
         <details open>
-          <summary className="ml-2 pt-2 pb-2 text-xl font-bold">Table des matières</summary>
+          <summary className="ml-2 pt-2 pb-2 text-xl font-bold lg:text-2xl">
+            Table des matières
+          </summary>
           <div className="ml-0">{tocList}</div>
         </details>
       ) : (
