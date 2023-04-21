@@ -1,4 +1,4 @@
-import LogoVertical from '/public/static/images/logos/aynils_vertical.svg'
+import LogoVertical from '/public/static/images/logos/aynils_icon.svg'
 import { useTranslation } from 'next-i18next'
 import Button from '@/components/Button/Button'
 import GradientSection from '@/components/Section/GradientSection'
@@ -26,7 +26,7 @@ const Hero = () => {
                   {t('how_can_we_help')}
                 </Button>
               </div>
-              <div className="h-9/12 mb-0 hidden w-9/12 justify-self-end lg:block">
+              <div className="mb-0 hidden h-full w-full justify-self-end lg:block">
                 <LogoVertical className="h-full w-full" />
               </div>
             </div>

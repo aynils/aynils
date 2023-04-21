@@ -9,8 +9,8 @@ const siteMetadata = {
   theme: 'light', // system, dark or light
   siteUrl: 'https://aynils.ca',
   siteRepo: 'https://github.com/aynils/aynils',
-  siteLogo: '/static/images/logos/aynils_square_image.svg',
-  image: '/static/images/logos/aynils_square_image.svg',
+  siteLogo: '/static/images/logos/aynils_icon.svg',
+  image: '/static/images/logos/aynils_icon.svg',
   socialBanner: '/static/images/aynils-default-card.png',
   email: 'seraphin@aynils.ca',
   github: 'https://github.com/aynils',
