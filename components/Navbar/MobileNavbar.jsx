@@ -48,7 +48,7 @@ const MobileNavbar = () => {
         </svg>
       </button>
       <div
-        className={`fixed top-24 right-0 z-10 h-full w-full transform bg-primary-200  duration-300 ease-in-out dark:bg-primary-800 ${
+        className={`fixed top-20 right-0 z-10 h-full w-full transform bg-primary-200  duration-300 ease-in-out dark:bg-primary-800 ${
           displayNavbar ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
