@@ -7,9 +7,23 @@ import Section from '@/components/Section/Section'
 import Button from '@/components/Button/Button'
 import InformIllustration from '/public/static/images/undraw_online_articles_re_yrkj.svg'
 import Link from '@/components/Link'
+import PublicationCards from '@/components/PublicationCards/PublicationCards/PublicationCard'
 
 const getStaticProps = makeStaticProps(['information', 'common'], {})
 export { getStaticPaths, getStaticProps }
+
+const guides = [
+  {
+    title: 'Choisir un mot de passe sécurisé',
+    slug: 'choisir-un-mot-de-passe-securitaire',
+    date: '2023-04-03',
+  },
+  {
+    title: "Guide de rédaction du cahier des charges pour la refonte d'un site Web",
+    slug: 'guide-cahier-des-charges-refonte-site-internet',
+    date: '2023-03-08',
+  },
+]
 
 export default function Guides() {
   const { t } = useTranslation('information')
@@ -38,27 +52,7 @@ export default function Guides() {
         </header>
         <p>{t('guides.p1')}</p>
         <p>{t('guides.p2')}</p>
-        <p>{t('guides.p4')}</p>
-        <ul>
-          <li>
-            <Link
-              href={'/information/guide-cahier-des-charges-refonte-site-internet'}
-              className="link font-bold"
-              aria-label="Guide de rédaction du cahier des charges pour la refonte d'un site Web"
-            >
-              📄 Guide de rédaction du cahier des charges pour la refonte d'un site Web
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={'/information/choisir-un-mot-de-passe-securitaire'}
-              className="link font-bold"
-              aria-label="Choisir un mot de passe sécuritaire"
-            >
-              📄 Choisir un mot de passe sécuritaire
-            </Link>
-          </li>
-        </ul>
+        <PublicationCards publications={guides} />
         <p>{t('guides.p6')}</p>
       </Section>
     </>

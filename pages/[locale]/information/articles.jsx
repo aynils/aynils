@@ -4,12 +4,19 @@ import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 import PageHeader from '@/components/Section/PageHeader'
 import Section from '@/components/Section/Section'
-import Button from '@/components/Button/Button'
 import InformIllustration from '/public/static/images/undraw_online_articles_re_yrkj.svg'
-import Link from '@/components/Link'
+import PublicationCards from '@/components/PublicationCards/PublicationCards/PublicationCard'
 
 const getStaticProps = makeStaticProps(['information', 'common'], {})
 export { getStaticPaths, getStaticProps }
+
+const articles = [
+  {
+    title: 'Incident de sécurité de LastPass: quels risques pour mon OSBL?',
+    slug: 'incident-de-securite-lastpass-quels-risques-que-faire',
+    date: '2023-03-02',
+  },
+]
 
 export default function Articles() {
   const { t } = useTranslation('information')
@@ -37,19 +44,7 @@ export default function Articles() {
           <h2>{t('articles.subtitle')}</h2>
         </header>
         <p>{t('articles.p2')}</p>
-        {/*<p>{t('articles.p2')}</p>*/}
-        <p>{t('articles.p3')}</p>
-        <ul>
-          <li>
-            <Link
-              href={'/information/incident-de-securite-lastpass-quels-risques-que-faire/'}
-              className="link font-bold"
-              aria-label="Modèle de politique de confidentialité des données"
-            >
-              📄 Incident de sécurité de LastPass : quels risques pour mon OSBL?
-            </Link>
-          </li>
-        </ul>
+        <PublicationCards publications={articles} />
       </Section>
     </>
   )

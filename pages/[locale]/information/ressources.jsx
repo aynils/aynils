@@ -7,9 +7,23 @@ import Section from '@/components/Section/Section'
 import Button from '@/components/Button/Button'
 import InformIllustration from '/public/static/images/undraw_online_articles_re_yrkj.svg'
 import Link from '@/components/Link'
+import PublicationCards from '@/components/PublicationCards/PublicationCards/PublicationCard'
 
 const getStaticProps = makeStaticProps(['information', 'common'], {})
 export { getStaticPaths, getStaticProps }
+
+const resources = [
+  {
+    title: "Modèle de cahier des charges pour la refonte d'un site internet",
+    slug: 'modele-cahier-des-charges-refonte-site-internet',
+    date: '2023-03-08',
+  },
+  {
+    title: 'Modèle de politique de confidentialité des données',
+    slug: 'modele-de-politique-de-confidentialite-des-donnees',
+    date: '2023-02-09',
+  },
+]
 
 export default function Resources() {
   const { t } = useTranslation('information')
@@ -39,27 +53,7 @@ export default function Resources() {
         <p>{t('resources.p1')}</p>
         <p>{t('resources.p2')}</p>
         <p>{t('resources.p3')}</p>
-        <p>{t('resources.p4')}</p>
-        <ul>
-          <li>
-            <Link
-              href={'/information/modele-de-politique-de-confidentialite-des-donnees/'}
-              className="link font-bold"
-              aria-label="Modèle de politique de confidentialité des données"
-            >
-              📄 Modèle de politique de confidentialité des données
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={'/information/modele-cahier-des-charges-refonte-site-internet'}
-              className="link font-bold"
-              aria-label="Modèle de cahier des charges pour la refonte d'un site internet"
-            >
-              📄 Modèle de cahier des charges pour la refonte d'un site internet
-            </Link>
-          </li>
-        </ul>
+        <PublicationCards publications={resources} />
 
         <p>{t('resources.p6')}</p>
       </Section>
