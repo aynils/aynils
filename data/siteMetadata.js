@@ -3,8 +3,7 @@ const siteMetadata = {
   defaultTitlePrefix: 'Aynils • ',
   author: 'Aynils',
   headerTitle: 'Aynils',
-  description:
-    'Information, conseil et outils informatiques pour les organismes sans but lucratif.',
+  description: 'Information, conseil et outils numériques pour les organismes sans but lucratif.',
   language: 'fr-ca',
   theme: 'light', // system, dark or light
   siteUrl: 'https://aynils.ca',

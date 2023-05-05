@@ -25,7 +25,7 @@
   },
   "consult_section": {
     "subtitle": "Vous accompagner dans le changement",
-    "p1": "Nous vous accompagnons lors de réflexions ou de changements dans vos procédures et outils informatiques.",
+    "p1": "Nous vous accompagnons lors de réflexions ou de changements dans vos procédures et outils numériques.",
     "p2": "Voici quelques exemples de nos domaines d'expertise :",
     "l1": "Audit de confidentialité et sécurité des données",
     "l2": "Rédaction du cahier des charges et choix d'un·e prestataire de services pour la refonte d'un site web",
@@ -34,8 +34,8 @@
     "consult_link": "Découvrez nos domaines d'expertise"
   },
   "tools_section": {
-    "subtitle": "Des outils informatiques adaptés à vos besoins",
-    "p1": "La plupart des logiciels informatiques sont développés avec une logique commerciale, et les OSBL doivent s’adapter pour pouvoir les utiliser. Nous avons décidé de renverser cette tendance.",
+    "subtitle": "Des outils numériques adaptés à vos besoins",
+    "p1": "La plupart des logiciels sont développés avec une logique commerciale, et les OSBL doivent s’adapter pour pouvoir les utiliser. Nous avons décidé de renverser cette tendance.",
     "p2": "Nous cocréons avec vous des outils qui répondent à vos besoins, basés sur vos réalités. Ensuite, nous rendons ces logiciels accessibles en ligne pour tout le monde, via un système d’abonnement annuel à prix modeste.",
     "p3": "De cette façon, nous mettons à profit l'intelligence collective de nos utilisateurs et utilisatrices, tout en mutualisant les couts.",
     "tools_link": "Découvrez nos outils"
