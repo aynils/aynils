@@ -9,7 +9,6 @@ const headerNavLinks = [
       { href: '/guides', title: 'guides' },
     ],
   },
-  { href: '/conseil', title: 'consult' },
   {
     href: '/outils',
     title: 'tools',
@@ -20,6 +19,7 @@ const headerNavLinks = [
       { href: '/feuille-de-temps', title: 'feuilledetemps' },
     ],
   },
+  { href: '/conseil', title: 'consult' },
   { href: '/a-propos', title: 'about' },
   { href: '/contact', title: 'contact' },
 ]

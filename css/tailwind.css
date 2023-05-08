@@ -149,10 +149,11 @@ label {
 }
 
 .accordion-item::after {
-  content: ' >';
+  content: '➤';
   @apply rotate-90;
   @apply inline-block;
-  @apply ml-3;
+  @apply ml-1;
+  @apply text-lg;
 }
 
 .dropdown-toggle::after {
