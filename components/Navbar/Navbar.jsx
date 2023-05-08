@@ -10,19 +10,19 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50  bg-primary-0 ">
       <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between pl-8 pr-8 pt-5 pb-2">
         <Link href="/" aria-label="home page">
-          <LogoHorizontal className="mb-2 h-32 w-full" />
+          <LogoHorizontal className="h-32 w-full" />
         </Link>
-        <div className="flex items-center text-base leading-5">
+        <div className="flex items-center font-nav !text-2xl font-semibold leading-5">
           <div className="hidden flex-nowrap lg:flex">
             {headerNavLinks.map((link) => {
               if (link.subLinks) {
                 return (
                   <div
                     key={link.title}
-                    className="dropdown text-primary-900 relative p-1 text-2xl font-light hover:text-primary-600 dark:text-primary-100 dark:hover:text-primary-400 lg:p-4"
+                    className="dropdown text-primary-900 relative p-1  hover:text-primary-600 dark:text-primary-100 dark:hover:text-primary-400 lg:p-4"
                   >
                     <button
-                      className="dropdown-toggle"
+                      className="dropdown-toggle font-semibold"
                       id={`menu-button-${link.title}`}
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
@@ -45,7 +45,6 @@ const Navbar = () => {
                           pt-4
                           pb-0
                           text-left
-                          text-base
                           shadow-lg
                         "
                       aria-labelledby={`menu-button-${link.title}`}
@@ -62,8 +61,6 @@ const Navbar = () => {
                                   bg-transparent
                                   py-4
                                   px-6
-                                  text-2xl
-                                  font-normal
                                   text-primary-700
                                   hover:bg-primary-100
                                 "
@@ -79,7 +76,7 @@ const Navbar = () => {
                   <Link
                     key={link.title}
                     href={link.href}
-                    className="dropdown text-primary-900  relative p-1  text-2xl font-light hover:text-primary-600 dark:text-primary-100 dark:hover:text-primary-400 lg:p-4"
+                    className="dropdown text-primary-900  relative p-1    hover:text-primary-600 dark:text-primary-100 dark:hover:text-primary-400 lg:p-4"
                   >
                     {t(link.title)}
                   </Link>

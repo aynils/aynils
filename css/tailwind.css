@@ -12,8 +12,13 @@
 @font-face {
   font-family: 'LexieReadable';
   font-weight: 500;
-  src: local('LexieReadable-Bold'),
-    url(../public/static/fonts/LexieReadable/LexieReadable-Bold.ttf) format('truetype');
+  src: url(../public/static/fonts/LexieReadable/LexieReadable-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-weight: 500;
+  src: url(../public/static/fonts/Nunito/static/Nunito-Medium.ttf);
 }
 
 @font-face {
@@ -31,27 +36,38 @@ body {
 
 header > p {
   @apply text-secondary-600;
+  @apply uppercase;
   @apply mt-1 mb-4;
 }
 
 h1 {
   @apply font-title;
-  @apply text-4xl font-semibold sm:text-6xl;
+  @apply text-4xl font-medium sm:text-6xl;
   letter-spacing: theme('letterSpacing.wide');
   @apply mb-6 lg:mb-8;
   @apply leading-normal;
+  @apply tracking-tight;
 }
 
 h2 {
-  @apply text-3xl font-medium sm:text-5xl;
+  @apply font-title;
+  @apply !text-3xl font-medium sm:!text-5xl;
   letter-spacing: theme('letterSpacing.wide');
   @apply leading-snug;
   @apply mt-1 mb-6;
 }
 
 h3 {
-  @apply text-2xl font-bold sm:text-4xl sm:font-light;
+  @apply font-title;
+  @apply !text-2xl font-bold sm:!text-4xl sm:font-normal;
   @apply mt-12 mb-6;
+}
+
+h4,
+h5,
+h6 {
+  @apply font-title;
+  @apply text-2xl font-bold sm:text-3xl sm:font-normal;
 }
 
 p {
@@ -96,7 +112,8 @@ label {
 }
 
 .button {
-  @apply inline-block flex;
+  @apply font-title;
+  @apply flex;
   @apply w-fit items-center sm:items-stretch;
   @apply rounded-2xl border;
   @apply mt-8 py-4 px-8;
@@ -104,11 +121,13 @@ label {
 }
 
 .button.primary {
+  @apply font-medium;
   @apply bg-primary-bright;
   @apply text-white;
 }
 
 .button.secondary {
+  @apply font-semibold;
   @apply border-primary-700;
 }
 
@@ -137,10 +156,11 @@ label {
 }
 
 .dropdown-toggle::after {
-  content: ' >';
+  content: '➤';
   @apply rotate-90;
   @apply inline-block;
-  @apply ml-3;
+  @apply ml-2;
+  @apply text-lg;
 }
 
 .link {

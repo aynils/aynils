@@ -25,7 +25,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['LexieReadable', ...defaultTheme.fontFamily.sans],
-        title: ['LexieReadable', ...defaultTheme.fontFamily.sans],
+        title: ['Nunito', ...defaultTheme.fontFamily.sans],
+        nav: ['Nunito', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: {
