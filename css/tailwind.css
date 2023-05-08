@@ -42,7 +42,7 @@ header > p {
 
 h1 {
   @apply font-title;
-  @apply text-4xl font-medium sm:text-6xl;
+  @apply text-4xl font-semibold sm:text-6xl;
   letter-spacing: theme('letterSpacing.wide');
   @apply mb-6 lg:mb-8;
   @apply leading-normal;
