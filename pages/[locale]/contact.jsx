@@ -26,10 +26,15 @@ export default function Contact() {
         <p>{t('form.p1')}</p>
         <form action="https://static-assistant-hmnx6.ondigitalocean.app/contact/form" method="POST">
           <div className="flex flex-col">
-            <label htmlFor="name" aria-required>
-              {t('name')}
-            </label>
-            <input className="text-input" type="text" id="name" name="name" autoComplete="name" />
+            <label htmlFor="name">{t('name')}</label>
+            <input
+              className="text-input"
+              type="text"
+              id="name"
+              name="name"
+              autoComplete="name"
+              aria-required
+            />
           </div>
           <div className="flex flex-col">
             <label htmlFor="organization">{t('organization')}</label>
