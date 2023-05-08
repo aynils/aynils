@@ -9,7 +9,7 @@ import { useTranslation } from 'next-i18next'
 import PageHeader from '@/components/Section/PageHeader'
 import Section from '@/components/Section/Section'
 
-const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { slug, fileName, date, title, tags, type, updatedDate } = frontMatter
@@ -60,7 +60,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                     <dl>
                       <dt className="sr-only">{t('publication_date')}</dt>
                       <dd className="flex w-full justify-center text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                        <time className={'capitalize'} dateTime={date}>
+                        <time dateTime={date}>
                           {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                         </time>
                       </dd>

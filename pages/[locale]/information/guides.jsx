@@ -17,11 +17,17 @@ const guides = [
     title: 'Choisir un mot de passe sécurisé',
     slug: 'choisir-un-mot-de-passe-securitaire',
     date: '2023-04-03',
+    summary:
+      '<p>Chaque service en ligne demande de choisir un mot de passe unique et difficile à deviner. Qui dit difficile à deviner dit souvent difficile à retenir.</p>' +
+      '<p>Alors comment fait-on pour choisir un mot de passe sécuritaire, mais facile à retenir ?</p>',
   },
   {
     title: "Guide de rédaction du cahier des charges pour la refonte d'un site Web",
     slug: 'guide-cahier-des-charges-refonte-site-internet',
     date: '2023-03-08',
+    summary:
+      "<p>Le cahier des charges est un document essentiel pour la préparation de la refonte d'un site internet. L'élaboration de ce document vous permettra de réfléchir à vos attentes et aux objectifs de la refonte.</p>" +
+      '<p>Dans ce guide, nous mettons notre expertise à votre service en vous expliquant quels sont les éléments importants et pourquoi ils devraient faire partie de votre cahier des charges.</p>',
   },
 ]
 

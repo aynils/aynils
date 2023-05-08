@@ -12,9 +12,11 @@ export { getStaticPaths, getStaticProps }
 
 const articles = [
   {
-    title: 'Incident de sécurité de LastPass: quels risques pour mon OSBL?',
+    title: 'Incident de sécurité de LastPass: quels risques pour mon OSBL ?',
     slug: 'incident-de-securite-lastpass-quels-risques-que-faire',
     date: '2023-03-02',
+    summary:
+      "<p>Ce 1er mars 2023, le gestionnaire de mots de passe LastPass a publié une mise à jour sur deux incidents de sécurités survenus ces derniers mois.</p><p> Que cela signifie-t-il exactement ? Que s'est-il passé et quelles données ont été compromises ? Quel est l'impact sur mon organisme sans but lucratif et comment réagir ?</p>",
   },
 ]
 

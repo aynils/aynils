@@ -114,7 +114,7 @@ label {
 .button {
   @apply font-title;
   @apply flex;
-  @apply w-fit items-center sm:items-stretch;
+  @apply w-fit items-center text-center sm:items-stretch;
   @apply rounded-2xl border;
   @apply mt-8 py-4 px-8;
   @apply duration-500 hover:scale-105;

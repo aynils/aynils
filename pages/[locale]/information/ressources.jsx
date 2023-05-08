@@ -17,11 +17,15 @@ const resources = [
     title: "Modèle de cahier des charges pour la refonte d'un site internet",
     slug: 'modele-cahier-des-charges-refonte-site-internet',
     date: '2023-03-08',
+    summary:
+      "<p>Le cahier des charges est un document essentiel pour la préparation de la refonte d'un site internet. C'est ce document qui servira de base pour les discussions avec les prestataires de service pour définir les coûts de développement puis à vérifier que le résultat correspond à vos attentes.<p/><p>Utilisez ce modèle mis à votre disposition pour ne rien oublier lors de la rédaction de ce document important.</p>",
   },
   {
     title: 'Modèle de politique de confidentialité des données',
     slug: 'modele-de-politique-de-confidentialite-des-donnees',
     date: '2023-02-09',
+    summary:
+      '<p>Une politique de confidentialité des données est le document qui permet à votre public, vos membres, vos partenaires et toutes les personnes avec lesquelles vous entretenez des relations professionnelles de connaître précisément la façon dont vous récoltez, traitez et stockez leurs données.</p><p>Utilisez ce modèle mis à votre disposition pour créer votre propre politique de confidentialité des données</p>',
   },
 ]
 
