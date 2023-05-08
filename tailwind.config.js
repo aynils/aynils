@@ -39,7 +39,8 @@ module.exports = {
           600: '#5F8286',
           700: '#334749',
           800: '#090C0D',
-          bright: '#0C81a0',
+          bright: '#0a80a0',
+          brightDark: '#285669',
         },
         backupSecondary: {
           0: '#fffaf8',
@@ -75,9 +76,11 @@ module.exports = {
           css: {
             color: theme('colors.secondary.800'),
             a: {
-              color: theme('colors.secondary.600'),
+              color: theme('colors.primary.bright'),
+              'text-decoration-thickness': '2px',
               '&:hover': {
-                color: `${theme('colors.secondary.700')} !important`,
+                color: `${theme('colors.primary.brightDark')} !important`,
+                'text-underline-offset': '0.2rem',
               },
               code: { color: theme('colors.primary.400') },
             },
@@ -128,7 +131,7 @@ module.exports = {
             'ul li::marker': {
               backgroundColor: theme('colors.secondary.500'),
             },
-            strong: { color: theme('colors.secondary.600') },
+            strong: { color: theme('colors.primary.brightDark') },
             blockquote: {
               color: theme('colors.secondary.900'),
               borderLeftColor: theme('colors.secondary.200'),

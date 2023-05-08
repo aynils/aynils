@@ -62,9 +62,9 @@ export default function APropos() {
           <h2>{t('values.subtitle')}</h2>
         </header>
         <ul>
-          <li className={'task-list-item'}>{t('values.l1')}</li>
-          <li className={'task-list-item'}>{t('values.l2')}</li>
-          <li className={'task-list-item'}>{t('values.l3')}</li>
+          <li className={'task-list-item values'}>{t('values.l1')}</li>
+          <li className={'task-list-item values'}>{t('values.l2')}</li>
+          <li className={'task-list-item values'}>{t('values.l3')}</li>
         </ul>
         <p>{t('values.p1')}</p>
       </Section>

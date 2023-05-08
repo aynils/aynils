@@ -35,7 +35,7 @@ body {
 }
 
 header > p {
-  @apply text-secondary-600;
+  @apply font-title font-semibold text-primary-brightDark;
   @apply uppercase;
   @apply mt-1 mb-4;
 }
@@ -132,6 +132,11 @@ label {
 }
 
 .task-list-item::before {
+  content: '➤ ';
+  @apply text-primary-500;
+}
+
+.task-list-item.values::before {
   content: '✓ ';
   @apply text-primary-500;
 }
