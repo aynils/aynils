@@ -89,16 +89,14 @@ details ul li::before {
 
 label {
   @apply capitalize;
+  @apply font-title;
+  @apply text-2xl;
+  @apply mb-2 mt-4;
 }
 
 li {
   @apply leading-8;
   @apply mb-5;
-}
-
-label {
-  @apply text-2xl;
-  @apply mb-2 mt-4;
 }
 
 .text-input {
