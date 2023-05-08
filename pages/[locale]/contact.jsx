@@ -38,26 +38,24 @@ export default function Contact() {
               type="text"
               id="organization"
               name="organization"
-              aria-required="false"
+              aria-required
             />
           </div>
           <div className="flex flex-col">
-            <label htmlFor="email" aria-required>
-              {t('email')}
-            </label>
+            <label htmlFor="email">{t('email')}</label>
             <input
               className="text-input"
               type="email"
               id="email"
               name="reply_to"
               autoComplete="email"
+              aria-required
             />
           </div>
           <div className="hidden" aria-hidden aria-disabled>
-            <label htmlFor="subject" aria-required>
-              {t('subject')}
-            </label>
+            <label htmlFor="subject">{t('subject')}</label>
             <input
+              aria-required
               className="text-input"
               type="subject"
               id="subject"
@@ -66,10 +64,9 @@ export default function Contact() {
             />
           </div>
           <div className="flex flex-col">
-            <label htmlFor="message" aria-required>
-              {t('message')}
-            </label>
+            <label htmlFor="message">{t('message')}</label>
             <textarea
+              aria-required
               className="text-input"
               id="message"
               name="message"
