@@ -10,7 +10,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/aynils/aynils',
   siteLogo: '/static/images/logos/aynils_icon.svg',
   image: '/static/images/logos/aynils_icon.svg',
-  socialBanner: '/static/images/aynils-default-card.png',
+  socialBanner: '/static/images/aynils-og-image.png',
   email: 'seraphin@aynils.ca',
   github: 'https://github.com/aynils',
   linkedin: 'https://www.linkedin.com/company/aynils',
