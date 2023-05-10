@@ -26,7 +26,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
           {...frontMatter}
         />
         <ScrollTopAndComment />
-        <article className={'mx-auto max-w-none xl:max-w-3xl'}>
+        <article className={'mx-auto max-w-none xl:max-w-5xl'}>
           <div
             className="divide-y divide-gray-200 pb-8 dark:divide-gray-700"
             style={{ gridTemplateRows: 'auto 1fr' }}
