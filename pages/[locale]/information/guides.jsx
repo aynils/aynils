@@ -14,6 +14,14 @@ export { getStaticPaths, getStaticProps }
 
 const guides = [
   {
+    title: 'Conseils pour des communications numériques accessibles',
+    slug: 'conseil-communications-numeriques-accessibles',
+    date: '2023-05-10',
+    summary:
+      "<p>Comment s'assurer que les communications numériques de votre organisme sont accessibles au plus grand nombre ?</p>" +
+      '<p>Dans ce guide, nous vous offrons une série de conseils pour atteindre cet objectif.</p>',
+  },
+  {
     title: 'Choisir un mot de passe sécurisé',
     slug: 'choisir-un-mot-de-passe-securitaire',
     date: '2023-04-03',

@@ -1,0 +1,142 @@
+---
+title: 'Conseils pour des communications numériques accessibles'
+date: '2023-05-10'
+updatedDate: '2023-05-10'
+type: 'guides'
+draft: false
+authors:
+  - default
+tags:
+  - accessibilité
+  - communication
+  - bonnes pratiques
+images:
+  - /static/images/aynils-og-image.png
+summary: "Comment s'assurer que les communications numériques de votre organisme sont accessibles au plus grand nombre ? Dans ce guide, nous vous offrons une série de conseils pour atteindre cet objectif."
+---
+
+Comment s'assurer que les communications numériques de votre organisme sont accessibles au plus grand nombre ?
+
+Dans ce guide, nous vous offrons une série de conseils pour atteindre cet objectif.
+
+Cette liste n'est pas exhaustive. Différentes personnes auront des besoins différents en matière d'accessibilité. L'important est de rester à l'écoute de son public et de régulièrement réévaluer ses pratiques en fonction des retours et des apprentissages.
+
+Ce guide est sous licence [Creative Commons CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) pour que vous puissiez partager ces conseils autour de vous.
+
+<TOCInline toc={props.toc} toHeading={3} asDisclosure={true} />
+
+## Faux-gras, italique, etc.
+
+La plupart des réseaux sociaux comme Instagram, LinkedIn et Twitter ne proposent pas d'options de mise en forme du texte comme le **gras** ou l'_italique_.
+
+Pour contourner cette limitation, il existe des sites web et des extensions qui permettent de générer du texte utilisant des caractères spéciaux qui ressemblent aux caractères normaux avec une mise en forme. Visuellement, l'effet est souvent réussi.
+
+Cependant, pour les personnes utilisant un lecteur d'écran, ces caractères sont soit ignorés soit lus comme des caractères scientifiques. Ce qui veut dire que le message que vous vouliez mettre en avant sera soit ignoré soit incompréhensible.
+
+Pour illustrer ceci, je vous invite à écouter ces [vidéos de qui montrent le résultat de la lecture de posts Twitter mis en forme de cette façon](https://adrianroselli.com/2021/10/reference-srs-and-extended-characters.html).
+
+## Emojis
+
+Sur les réseaux sociaux, les emojis sont souvent employés pour égayer un texte ou mettre en avant certains éléments.
+Il faut ici faire attention à deux problèmes qui peuvent être liés à une utilisation inappropriée ce ceux-ci.
+
+### Répétition
+
+La répétition d'emojis peut sembler visuellement attrayante mais sera souvent lourde lorsque lue par un lecteur d'écran.
+
+Par exemple, le message "👉👉👉 Notre nouveau site est en ligne! https://aynils.ca" pourrait être lu “Notre nouveau site est en ligne! ​main de dos avec index pointant vers la droite main de dos avec index pointant vers la droite main de dos avec index pointant vers la droite lien vers https://aynils.ca”
+
+### Signification
+
+Chaque emoji à une signification précise. Souvent, ils sont utilisés pour leur ressemblance avec un autre objet ou une situation particulière.
+
+Par exemple, l'emoji 🚩utilisé pour remplacer l'expression _red flag_ sera lu "drapeau sur un mât" par un lecteur d'écran.
+
+Pour vous assurer de la signification d'un émoji, vous pouvez consulter [la liste officielle de tous les emojis](https://unicode.org/emoji/charts/full-emoji-list.html) (en anglais uniquement)
+
+## Ecriture simplifiée
+
+L'écriture simplifiée, ou rédaction simplifiée est une méthode d'écriture qui place la clarté du texte et sa compréhension par le public au premier plan. L'objectif du texte est d'être compris par la personne qui le reçoit.
+
+En adaptant son texte pour des personnes qui souffrent de déficiences cognitives, de difficultés d'apprentissage ou dont le français n'est pas la langue maternelle, on le rend plus accessible pour tout le monde.
+
+Quelques pistes de simplification :
+
+- Rédigez des phrases courtes ;
+- Une idée par phrase et un sujet par paragraphe ;
+- Pas de jargon ni de mots compliqués : si vous devez absolument utiliser un mot peu fréquent, définissez-le ;
+- Placez les informations les plus importantes au début ;
+
+## Texte alternatif
+
+Les images ne peuvent pas être vues par les personnes atteintes de déficiences visuelles et sont difficilement accessibles dans les lieux ou la connexion au réseau est faible.
+
+Le texte alternatif, représenté par la balise `alt` permet de rendre le contenu des images accessibles en remplaçant l'image par du texte, lorsque celle-ci ne peut par être vue.
+
+Il est important que le texte décrive l'image avec suffisamment de détails. Par exemple, ne pas se contenter de "chien" mais plutôt "​Chien de type Labrador portant un collier bleu avec une médaille. Il a l’air content. Il est couché sur un banc de bois dans la nature.".
+
+Il est préférable d'éviter de publier du texte sur des images. Si, pour une certaine raison, vous devez le faire, tout le texte de l'image doit se retrouver dans l'attribut `alt`
+
+Le but ici encore est de vous assurer que tout le monde bénéficie du même niveau d'information.
+
+On conseille d'utiliser un texte alternatif de 130 caractères maximum car certains lecteurs d'écrans arrêteront de le lire passé cette limite.
+
+### Site web
+
+Lors de la publication d'images sur votre site web, votre éditeur de site web devrait vous proposer cette option. Si ce n'est pas le cas, nous vous invitons à demander une mise à jour à la personne qui gère la maintenance de votre site.
+
+### Réseaux sociaux
+
+Tous les réseaux sociaux permettent maintenant d'entrer un texte alternatif lorsque vous postez une image. Vous trouverez généralement cette option sous l'appellation "Alt text"
+
+## Mise en forme du texte
+
+Pour vous assurer de la bonne compréhension de votre texte, il est conseillé de suivre quelques règles de mise en forme.
+
+### Contraste
+
+Plusieurs types de déficiences visuelles rendent la distinction entre deux couleurs peu contrastées plus difficile. Cela peut également poser problème pour tout le monde dans le cas de la lecture sur un écran en plein soleil.
+
+Il existe des outils comme [WCAG Color Checker](https://addons.mozilla.org/en-US/firefox/addon/wcag-contrast-checker/) qui permettent de vérifier le contraste entre deux couleurs. Cette valeur est exprimée sous forme de ratio. Plus le ratio est élevé, plus le contraste est important et plus le texte est facilement lisible.
+
+Par exemple, sur fond blanc, préférez écrire en violet (`#CC21CC`) pour un ratio de 4.5:1 plutôt qu'en rouge (`#FF0000`) qui aura un ratio de 4:1 est en dessous du minimum recommandé pour la lecture.
+
+### Taille minimum
+
+Sur le web, on conseille d'utiliser une taille de police minimum de 16px. Une unité de mesure spécifique a été créée pour permettre aux navigateurs de redimensionner la taille du texte en fonction des préférence des utilisateurs et utilisatrices. Cette unité est le `rem`. Si possible, utilisez cette unité avec des multiples de 1rem (1,25 ; 1,5 ; 2 ; etc) mais jamais en dessous de 1.
+
+### Police
+
+Évitez les polices de caractère extravagantes qui rendront le texte plus difficile à lire.
+Si vous en avez la possibilité, vous pouvez utiliser des polices spécialement conçues pour faciliter la lecture pour les personnes atteintes de dyslexie comme [Lexie Readable](http://www.k-type.com/fonts/lexie-readable/) (utilisée sur ce site) ou [Open Dyslexic](https://opendyslexic.org/)
+
+### Gras
+
+Utiliser du gras pour mettre en avant certains mots clés dans le texte peut grandement contribuer à sa lisibilité. Cela permet d'identifier les parties importantes en un coup d'oeil.
+Attention toutefois à ne pas en abuser. De longs passages ou des paragraphes entiers en gras seront plus difficiles à déchiffrer.
+
+### Structure
+
+En plus des conseils de l'écriture simplifiée, utiliser des titres, des sous-titres et des listes quand c'est possible permet d'aérer le texte et de le rendre plus lisible.
+
+## Pour aller plus loin
+
+### Outils
+
+#### Extensions de navigateur
+
+- [WCAG Color Checker pour Firefox](https://addons.mozilla.org/en-US/firefox/addon/wcag-contrast-checker/) :
+- [WCAG Color Checker pour Chrome](https://chrome.google.com/webstore/detail/wcag-color-contrast-check/plnahcmalebffmaghcpcmpaciebdhgdf) :
+- [Wave toolbar](https://wave.webaim.org/extension/)
+
+#### Polices d’écriture
+
+- [Lexie Readable](http://www.k-type.com/fonts/lexie-readable/)
+- [Open Dyslexic](https://opendyslexic.org/)
+
+### Ressources
+
+- [Standard sur l'accessibilité des sites web du gouvernement du Québec](https://www.tresor.gouv.qc.ca/fileadmin/PDF/ressources_informationnelles/AccessibiliteWeb/standard-access-web.pdf)
+- [Web Content Accessibility Guidelines (WCAG) ](https://www.w3.org/WAI/standards-guidelines/wcag/fr)
+- [Livre de Laura Kalbag : Accessibility for Everyone ](https://abookapart.com/products/accessibility-for-everyone)
+- [Site de Mozilla sur l'HTML et l'accessibilité ](https://developer.mozilla.org/fr/docs/Learn/Accessibility/HTML)

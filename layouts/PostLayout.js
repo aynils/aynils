@@ -71,7 +71,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             </dl>
             <div className="mx-auto max-w-none divide-y divide-gray-200 dark:divide-gray-700">
               <div className="prose pt-10 pb-8 text-xl dark:prose-dark ">{children}</div>
-              <div className="pt-6 pb-6 text-base text-gray-700 dark:text-gray-300">
+              <div className="pt-6 pb-6 text-base text-primary-700 dark:text-gray-300 lg:text-xl">
                 {t('licence')}
                 <Link
                   href={'https://creativecommons.org/licenses/by-sa/4.0/deed.fr'}
@@ -104,19 +104,19 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 {/*  </div>*/}
                 {/*)}*/}
                 {(next || prev) && (
-                  <div className="block space-y-8 py-2 py-8">
+                  <div className="block space-y-8 py-8 font-title text-lg lg:text-2xl">
                     {prev && (
                       <div>
-                        <p className="mb-2 text-base lg:text-lg">{t('previous')}</p>
-                        <div className="mt-0 text-base text-secondary-600 hover:text-secondary-700 dark:text-primary-200 dark:hover:text-primary-300 lg:text-lg">
+                        <p className="mb-2 ">{t('previous')}</p>
+                        <div className="mt-0 text-primary-bright hover:text-primary-brightDark">
                           <Link href={`/information/${prev.slug}`}>{prev.title}</Link>
                         </div>
                       </div>
                     )}
                     {next && (
                       <div>
-                        <p className="mb-2 text-base lg:text-lg">{t('next')}</p>
-                        <div className="mt-2 text-base text-secondary-600 hover:text-secondary-700 dark:text-primary-200 dark:hover:text-primary-300 lg:text-lg">
+                        <p className="mb-2 ">{t('next')}</p>
+                        <div className="mt-2 text-primary-bright hover:text-primary-brightDark">
                           <Link href={`/information/${next.slug}`}>{next.title}</Link>
                         </div>
                       </div>
