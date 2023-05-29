@@ -31,7 +31,6 @@
 
 body {
   @apply text-xl;
-  @apply leading-8;
 }
 
 header > p {

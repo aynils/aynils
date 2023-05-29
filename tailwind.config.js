@@ -14,6 +14,14 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontSize: {
+        xl: [
+          '1.25rem',
+          {
+            lineHeight: '2rem',
+          },
+        ],
+      },
       spacing: {
         '9/16': '56.25%',
       },

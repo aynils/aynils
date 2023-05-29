@@ -12,6 +12,14 @@ export { getStaticPaths, getStaticProps }
 
 const articles = [
   {
+    title: 'Le numérique est politique et les OSBL auraient raison de s’y intéresser',
+    slug: 'le-numerique-est-politique',
+    date: '2023-05-29',
+    summary:
+      '<p>Depuis quelques années, de nombreuses initiatives documentent la domination croissante qu’exercent sur nos sociétés une poignée de géants du numérique. Cette hégémonie est-elle un problème ? </p>' +
+      '<p>Discutons-en dans ce premier article d’une série consacrée aux stratégies numériques des organismes sans but lucratif.</p>',
+  },
+  {
     title: 'Incident de sécurité de LastPass: quels risques pour mon OSBL ?',
     slug: 'incident-de-securite-lastpass-quels-risques-que-faire',
     date: '2023-03-02',
