@@ -12,6 +12,14 @@ export { getStaticPaths, getStaticProps }
 
 const articles = [
   {
+    title: 'Savez-vous reconnaitre une tentative de phishing?',
+    slug: 'savez-vous-reconnaitre-une-tentative-de-phishing',
+    date: '2023-06-12',
+    summary:
+      '<p>Le <i>phishing</i> ou hameçonnage est une technique qui consiste pour des personnes mal intentionnées à se faire passer pour un service en ligne que vous utilisez, dans le but de vous soutirer des informations personnelles. Le plus souvent, des informations de connexion ou de carte de crédit.</p>' +
+      '<p>Ce test vous permettra de vous entrainer à reconnaitre ces courriels frauduleux.</p>',
+  },
+  {
     title: 'Le numérique est politique et les OSBL auraient raison de s’y intéresser',
     slug: 'le-numerique-est-politique',
     date: '2023-05-29',
