@@ -20,7 +20,7 @@ const articles = [
       '<p>Ce test vous permettra de vous entrainer à reconnaitre ces courriels frauduleux.</p>',
   },
   {
-    title: 'Le numérique est politique et les OSBL auraient raison de s’y intéresser',
+    title: 'Le numérique est politique et les OSBL devraient s’y intéresser',
     slug: 'le-numerique-est-politique',
     date: '2023-05-29',
     summary:
