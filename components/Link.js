@@ -4,7 +4,8 @@ import { useRouter } from 'next/router'
 
 const CustomLink = ({ skipLocaleHandling, href, ...rest }) => {
   const router = useRouter()
-  const locale = rest.locale || router.query.locale || 'fr'
+  // const locale = rest.locale || router.query.locale || 'fr'
+  const locale = 'fr' // Until we decide to translate to EN
 
   href = href || router.asPath
   if (href.indexOf('http') === 0 || href.indexOf('mailto') === 0) skipLocaleHandling = true
