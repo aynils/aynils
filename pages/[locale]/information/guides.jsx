@@ -14,6 +14,15 @@ export { getStaticPaths, getStaticProps }
 
 const guides = [
   {
+    title: 'Guide pour bien choisir une solution numérique',
+    slug: 'choisir-un-outil-numerique',
+    date: '2024-04-17',
+    summary:
+      '<p>Dans un monde où la technologie évolue à un rythme effréné, les organisations sans but lucratif (OSBL) se trouvent souvent à la croisée des chemins : adopter de nouvelles technologies ou risquer de rester en marge. </p>' +
+      '<p>Pour naviguer avec succès dans cet environnement numérique complexe, il est essentiel de savoir choisir et évaluer les outils numériques pertinents.</p>' +
+      '<p>Voici un guide pour aider les OSBL à faire des choix éclairés qui soutiendront leurs missions et maximiseront leur impact sur les communautés.</p>',
+  },
+  {
     title: 'Conseils pour des communications numériques accessibles',
     slug: 'conseil-communications-numeriques-accessibles',
     date: '2023-05-10',
@@ -21,6 +30,7 @@ const guides = [
       "<p>Comment s'assurer que les communications numériques de votre organisme sont accessibles au plus grand nombre ?</p>" +
       '<p>Dans ce guide, nous vous offrons une série de conseils pour atteindre cet objectif.</p>',
   },
+
   {
     title: 'Choisir un mot de passe sécurisé',
     slug: 'choisir-un-mot-de-passe-securitaire',
