@@ -12,11 +12,19 @@ export { getStaticPaths, getStaticProps }
 
 const articles = [
   {
+    title: 'Protéger les données personnelles : comment fonctionne le chiffrement ?',
+    slug: 'comment-fonctionne-chiffrement',
+    date: '2024-09-12',
+    summary:
+      '<p>Dans notre monde de plus en plus connecté, nous partageons énormément d’informations en ligne : messages, achats, réseaux sociaux, et bien plus encore.</p>' +
+      '<p>Mais comment être sûr·e que toutes ces données restent privées et sécurisées ? C’est ici que le chiffrement des données entre en jeu.</p>',
+  },
+  {
     title: 'Savez-vous reconnaitre une tentative de phishing?',
     slug: 'savez-vous-reconnaitre-une-tentative-de-phishing',
     date: '2023-06-12',
     summary:
-      '<p>Le <i>phishing</i> ou hameçonnage est une technique qui consiste pour des personnes mal intentionnées à se faire passer pour un service en ligne que vous utilisez, dans le but de vous soutirer des informations personnelles. Le plus souvent, des informations de connexion ou de carte de crédit.</p>' +
+      '<p>Le <i>phishing</i> ou hameçonnage est une technique qui consiste, pour des personnes mal intentionnées à se faire passer pour un service en ligne que vous utilisez, dans le but de vous soutirer des informations personnelles. Le plus souvent, des informations de connexion ou de carte de crédit.</p>' +
       '<p>Ce test vous permettra de vous entrainer à reconnaitre ces courriels frauduleux.</p>',
   },
   {
