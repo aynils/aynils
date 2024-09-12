@@ -25,7 +25,7 @@ const articles = [
     date: '2023-06-12',
     summary:
       '<p>Le <i>phishing</i> ou hameçonnage est une technique qui consiste, pour des personnes mal intentionnées à se faire passer pour un service en ligne que vous utilisez, dans le but de vous soutirer des informations personnelles. Le plus souvent, des informations de connexion ou de carte de crédit.</p>' +
-      '<p>Ce test vous permettra de vous entrainer à reconnaitre ces courriels frauduleux.</p>',
+      "<p>Dans cet article, nous vous donnons les clés pour vous permettre d'identifier un courriel suspicieux puis un test qui vous permettra de vous entrainer et éviter de tomber dans le piège.</p>",
   },
   {
     title: 'Le numérique est politique et les OSBL devraient s’y intéresser',
