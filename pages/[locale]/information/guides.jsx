@@ -14,6 +14,15 @@ export { getStaticPaths, getStaticProps }
 
 const guides = [
   {
+    title: 'Guide pour rédiger des textes alternatifs efficaces et inclusifs',
+    slug: 'textes-alternatifs-accessibles',
+    date: '2024-11-20',
+    summary:
+      '<p>Les textes alternatifs (ou textes alt) rendent vos contenus accessibles à un public plus large, notamment aux personnes utilisant des lecteurs d’écran. Ils sont essentiels pour garantir l’inclusion et l’égalité d’accès à l’information.</p>' +
+      '<p>Pour les OSBL, ils permettent de mieux communiquer leurs valeurs, d’élargir leur audience et de respecter les normes d’accessibilité. Bien rédigés, les textes alt renforcent vos messages et rendent vos campagnes plus impactantes.</p>' +
+      '<p>Un texte alt efficace va au-delà de la description factuelle : il reflète vos valeurs et votre ton. Ce guide vous explique comment rédiger des textes alternatifs pertinents et engageants.</p>',
+  },
+  {
     title: 'Guide pour bien choisir une solution numérique',
     slug: 'choisir-un-outil-numerique',
     date: '2024-04-17',
